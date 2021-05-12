@@ -1,0 +1,368 @@
+/* #region GENERAL STYLES */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5em;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+  
+li {
+padding-left: 1em;
+text-indent: -1em;
+}
+  
+li:before {
+content: "♪";
+padding-right: 5px;
+}
+
+.image {
+    margin: 2em 25% 2em 25%;
+}
+
+#counter {
+	display:none;
+  }
+
+/* #endregion GENERAL STYLES */
+
+/* #region STYLE_BUTTONS */
+.dark {
+    background-color: white;
+    color: black;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.float_plus{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:170px;
+	/* right:94%; */
+	right: 10px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.float_minus{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:105px;
+	/* right:94%; */
+	right: 10px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.float_mode{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	/* right:94%; */
+	right: 10px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+/* #endregion STYLE_BUTTONS */
+
+/* #region SECTION SCROLLER */
+.intro_scroll {
+    position:fixed;
+	width:100px;
+	height:30px;
+	/* bottom:160px; */
+    bottom: 97%;
+	right: 94%;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:15px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.early_scroll {
+    position:fixed;
+	width:100px;
+	height:30px;
+	bottom:94.5%;
+	right: 94%;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:15px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.game_comp_scroll {
+    position:fixed;
+	width:100px;
+	height:30px;
+	bottom:92%;
+	right: 94%;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:15px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.edm_scroll {
+    position:fixed;
+	width:100px;
+	height:30px;
+	bottom:89.5%;
+	right: 94%;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:15px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.soundtrack_scroll {
+    position:fixed;
+	width:100px;
+	height:30px;
+	bottom:29.5%;
+	right: 94%;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:15px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+/* #endregion SECTION SCROLLER */
+
+/* #region SUBSCROLL*/
+#subscroll {
+    position:fixed;
+	width:130px;
+	height:30px;
+	right: 90%;
+	background-color:rgba(0, 204, 153, 0.521);
+	color:#FFF;
+	border-radius:15px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.chicago{
+    bottom: 87%;
+}
+
+.deep {
+    bottom: 84.5%;
+}
+
+.prog {
+    bottom: 82%;
+}
+
+.acid_house {
+    bottom: 79.5%;
+}
+
+.acid_jazz {
+    bottom: 77%;
+}
+
+.nu {
+    bottom: 74.5%;
+}
+
+.jazzstep {
+    bottom: 72%;
+}
+.garage {
+    bottom: 69.5%;
+}
+.techno {
+    bottom: 67%;
+}
+.dnb {
+    bottom: 64.5%;
+}
+.trance {
+    bottom: 62%;
+}
+.goa {
+    bottom: 59.5%;
+}
+.dream {
+    bottom: 57%;
+}
+.trip {
+    bottom: 54.5%;
+}
+.dub {
+    bottom: 52%;
+}
+.trap {
+    bottom: 49.5%;
+}
+.future {
+    bottom: 47%;
+}
+.chill {
+    bottom: 44.5%;
+}
+.idm {
+    bottom: 42%;
+}
+.folktronica {
+    bottom: 39.5%;
+}
+.synthpop {
+    bottom: 37%;
+}
+.synthwave {
+    bottom: 34.5%;
+}
+.vaporwave {
+    bottom: 32%;
+}
+
+
+/* #endregion SUBSCROLL */
+
+/* #region PAGE DIVIDERS */
+.inner {
+    width:50%;
+    margin: 3px auto;
+}
+
+.outer {
+    width:25%;
+    margin:0 auto;
+}
+/* #endregion PAGE DIVIDERS */
+
+/* #region INFO BLOCKS */
+.intro_container {
+    /* margin: 0em 20em 10em 20em; */
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5em;
+}
+
+.early_electronic {
+    margin: 5em 20em 10em 20em;
+}
+
+.game_music {
+    margin: 5em 20em 10em 20em;
+}
+
+.edm_explainer {
+    margin: 5em 20em 10em 20em;
+}
+
+.extra_songs {
+    margin: 5em 20em 10em 20em;
+}
+
+.soundtracks {
+    margin: 5em 20em 10em 20em;
+}
+/* #endregion INFO BLOCKS */
+
+/* #region VIDEO BLOCKS */
+.info {
+    margin: 2em 0 2em 0;
+}
+
+.artist, .film {
+    font-size: 3em;
+    margin: 0 15% 0 15%;
+}
+
+.song {
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 0;
+    margin: 0 15% 0 15%;
+}
+
+.year {
+    font-size: 2em;
+    margin: 0 15% 0 15%;
+}
+
+.genre {
+    font-size: 2em;
+    margin: 0 15% 0 15%;
+}
+
+.details {
+    font-size: 1rem;
+    margin: .5em 15% 0 15%;
+}
+
+.video {
+    display: flex; 
+	justify-content: center;
+    margin-top: 1em;
+}
+
+.quote {
+    font-style: italic;
+    margin: 0em 10% 0 10%;
+}
+/* #endregion VIDEO BLOCKS */
+
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+	width: 40px;
+  }
+  
+  ::-webkit-scrollbar-track {
+	background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	border: 6px solid transparent;
+	background-clip: content-box;
+	background: #ee82ee;
+	border-radius: .5em;
+	box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25),inset -2px -2px 2px rgba(0,0,0,.25);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+	background-color: #a8bbbf;
+  }

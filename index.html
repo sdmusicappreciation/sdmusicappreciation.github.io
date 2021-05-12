@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Control Buttons -->
+        <button class="float_plus" onclick="plus()">+</button>
+        <button class="float_minus" onclick="minus()">-</button>
+        <br>
+        <button class="float_mode" onclick="mode()">D/N</button>
+
+
+        <div class="title">Music Appreciation of the 20th Century</div>
+        <div class="teacher">with Marcia Forman</div>
+        <hr>
+
+        <div id="TOC" class="TOC">Topics</div>
+        
+        <ul>
+            <li><a href="https://sdmusicappreciation.github.io/electronic.html" target="#">Electronic</a></li>
+            <li><a href="https://sites.google.com/view/hip----hop/home">Hip-Hop</a></li>
+            <li><a href="https://sites.google.com/view/musi-505-rocknroll/home" target="#">Rock'n'Roll</a></li>
+            <li><a href="https://sites.google.com/view/rock80s-present/home" target="#">Rock: 70s - Present</a></li>
+            <li><a href="https://sites.google.com/view/country-western/home" target="#">Country</a></li>
+            <li><a href="https://sites.google.com/view/rbmotownfunk/home" target="#">R&B, Motown, & Funk</a></li>
+            <li><a href="https://sites.google.com/view/world--music/home" target="#">Music Around the World</a></li>
+            <li><a href="https://sites.google.com/view/musi505-asia/home" target="#">Asian Music</a></li>
+        </ul>
+
+        <p id="counter"></p>
+        
+        <script>
+            function plus() {
+                txt = document.body;
+                style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+                currentSize = parseFloat(style);
+                txt.style.fontSize = (currentSize + 5) + 'px';
+            }
+            function minus() {
+                txt = document.body;
+                style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+                currentSize = parseFloat(style);
+                if (currentSize > 15) {
+                    txt.style.fontSize = (currentSize - 5) + 'px';
+                }
+            }
+            function mode() {
+                document.body.classList.toggle("dark");
+            }
+
+            // Counter
+            const countEl = document.getElementById('counter');
+
+            updateVisitCount();
+
+            function updateVisitCount() {
+            fetch('https://api.countapi.xyz/hit/sdmusicappreciation/test')
+            // https://api.countapi.xyz/hit/sdmusicappreciation/main
+            .then(res => res.json())
+            .then(res => {
+                countEl.innerHTML = res.value;
+            })
+            }
+        </script>
+    </body>
+</html>
