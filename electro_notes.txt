@@ -1,0 +1,5 @@
+Try to simplify the scroll script
+- single function
+- drop the button ID (w/ some consistent extra identifier attached, like "edm_button") into a var
+- remove identifier from var (so now it's "edm")
+- scroll to ID of var, which is the location on the page
