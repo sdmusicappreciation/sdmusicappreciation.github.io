@@ -10,41 +10,46 @@
     </head>
     <body>
         <!-- Control Buttons -->
-        <button class="float_plus" onclick="plus()">➕</button>
-        <button class="float_minus" onclick="minus()">➖</button>
-        <button class="float_mode" onclick="mode()">🌞<br>🌙</button>
-
-        <!-- Scroll buttons -->
-        <!-- <button class="intro_scroll" onclick="intro_scroll()">Introduction</button>
-        <button class="early_scroll" onclick="early_scroll()">Early Forms</button>
-        <button class="game_comp_scroll" onclick="game_comp_scroll()">Comp&Games</button>
-        <button class="edm_scroll" onclick="edm_scroll()">EDM</button> -->
-        <!-- SUBSCROLL -->
-        <!-- <button class="chicago" id="subscroll" onclick="chicago()">Chicago House</button>
-        <button class="deep" id="subscroll" onclick="deep()">Deep House</button>
-        <button class="prog" id="subscroll" onclick="prog()">Progressive House</button>
-        <button class="acid_house" id="subscroll" onclick="acid_house()">Acid House</button>
-        <button class="acid_jazz" id="subscroll" onclick="acid_jazz()">Acid Jazz</button>
-        <button class="nu" id="subscroll" onclick="nu()">Nu Jazz</button>
-        <button class="jazzstep" id="subscroll" onclick="jazzstep()">Jazzstep</button>
-        <button class="garage" id="subscroll" onclick="garage()">UK Garage</button>
-        <button class="techno" id="subscroll" onclick="techno()">Techno</button>
-        <button class="dnb" id="subscroll" onclick="dnb()">Drum'n'Bass</button>
-        <button class="trance" id="subscroll" onclick="trance()">Trance</button>
-        <button class="goa" id="subscroll" onclick="goa()">Goa Trance</button>
-        <button class="dream" id="subscroll" onclick="dream()">Dream Trance</button>
-        <button class="trip" id="subscroll" onclick="trip()">Trip Hop</button>
-        <button class="dub" id="subscroll" onclick="dub()">Dubstep</button>
-        <button class="trap" id="subscroll" onclick="trap()">Trap</button>
-        <button class="future" id="subscroll" onclick="future()">Future Bass</button>
-        <button class="chill" id="subscroll" onclick="chill()">Chill-Out</button>
-        <button class="idm" id="subscroll" onclick="idm()">IDM</button>
-        <button class="folktronica" id="subscroll" onclick="folktronica()">Folktronica</button>
-        <button class="synthpop" id="subscroll" onclick="synthpop()">Synth/Electro-pop</button>
-        <button class="synthwave" id="subscroll" onclick="synthwave()">Synthwave</button>
-        <button class="vaporwave" id="subscroll" onclick="vaporwave()">Vaporwave</button> -->
-
-        <!-- <button class="soundtrack_scroll" onclick="soundtrack_scroll()">Film&TV</button> -->
+        <div class="style_btn">
+            <button class="float_plus" onclick="plus()">➕</button>
+            <button class="float_minus" onclick="minus()">➖</button>
+            <button class="float_mode" onclick="mode()">🌞<br>🌙</button>
+        </div>
+        
+        <!-- Mobile Scroll Menu -->
+        <div class="menu_mobile_container">
+            <button class="menu_button_mobile" onclick="mobile_btn_func()">Menu</button>
+            <div id="btn_group_mobile_id" class="btn_group_mobile">
+                <button class="intro_scroll btn_mobile" onclick="scroller('intro_container')">Introduction</button>
+                <button class="early_scroll btn_mobile" onclick="scroller('early_electronic')">Early Forms</button>
+                <button class="game_comp_scroll btn_mobile" onclick="scroller('game_music')">Comp&Games</button>
+                <button class="edm_scroll btn_mobile" onclick="scroller('edm_explainer')">EDM</button>
+                <button class="chicago" id="subscroll" onclick="scroller('chicago')">Chicago House</button>
+                <button class="deep" id="subscroll" onclick="scroller('deep')">Deep House</button>
+                <button class="prog" id="subscroll" onclick="scroller('prog')">Progressive House</button>
+                <button class="acid_house" id="subscroll" onclick="scroller('acid_house')">Acid House</button>
+                <button class="acid_jazz" id="subscroll" onclick="scroller('acid_jazz')">Acid Jazz</button>
+                <button class="nu" id="subscroll" onclick="scroller('nu')">Nu Jazz</button>
+                <button class="jazzstep" id="subscroll" onclick="scroller('jazzstep')">Jazzstep</button>
+                <button class="garage" id="subscroll" onclick="scroller('garage')">UK Garage</button>
+                <button class="techno" id="subscroll" onclick="scroller('techno')">Techno</button>
+                <button class="dnb" id="subscroll" onclick="scroller('dnb')">Drum'n'Bass</button>
+                <button class="trance" id="subscroll" onclick="scroller('trance')">Trance</button>
+                <button class="goa" id="subscroll" onclick="scroller('goa')">Goa Trance</button>
+                <button class="dream" id="subscroll" onclick="scroller('dream')">Dream Trance</button>
+                <button class="trip" id="subscroll" onclick="scroller('trip')">Trip Hop</button>
+                <button class="dub" id="subscroll" onclick="scroller('dub')">Dubstep</button>
+                <button class="trap" id="subscroll" onclick="scroller('trap')">Trap</button>
+                <button class="future" id="subscroll" onclick="scroller('future')">Future Bass</button>
+                <button class="chill" id="subscroll" onclick="scroller('chill')">Chill-Out</button>
+                <button class="idm" id="subscroll" onclick="scroller('idm')">IDM</button>
+                <button class="folktronica" id="subscroll" onclick="scroller('folktronica')">Folktronica</button>
+                <button class="synthpop" id="subscroll" onclick="scroller('synthpop')">Synth/Electro-pop</button>
+                <button class="synthwave" id="subscroll" onclick="scroller('synthwave')">Synthwave</button>
+                <button class="vaporwave" id="subscroll" onclick="scroller('vaporwave')">Vaporwave</button>
+                <button class="soundtrack_scroll btn_mobile" onclick="scroller('soundtracks')">Film&TV</button>
+            </div>
+         </div>
 
         <div class="banner"><img src="img/electronic_header.png" alt=""></div>
 
@@ -1136,127 +1141,14 @@
                 document.body.classList.toggle("dark");
             }
 
-            // Scrolling Buttons MAIN
-            function intro_scroll() {
-                var elmnt = document.getElementById("intro_container");
-                elmnt.scrollIntoView();
-            }
-            function early_scroll() {
-                var elmnt = document.getElementById("early_electronic");
-                elmnt.scrollIntoView();
-            }
-            function game_comp_scroll() {
-                var elmnt = document.getElementById("game_music");
-                elmnt.scrollIntoView();
-            }
-            function edm_scroll() {
-                var elmnt = document.getElementById("edm_explainer");
-                elmnt.scrollIntoView();
-            }
-            function soundtrack_scroll() {
-                var elmnt = document.getElementById("soundtracks");
-                elmnt.scrollIntoView();
-            }
-
-            // Scrolling Buttons SUB
-            function chicago() {
-                var elmnt = document.getElementById("chicago");
-                elmnt.scrollIntoView();
-            }
-            function deep() {
-                var elmnt = document.getElementById("deep");
-                elmnt.scrollIntoView();
-            }
-            function prog() {
-                var elmnt = document.getElementById("prog");
-                elmnt.scrollIntoView();
-            }
-            function acid_house() {
-                var elmnt = document.getElementById("acid_house");
-                elmnt.scrollIntoView();
-            }
-            function acid_jazz() {
-                var elmnt = document.getElementById("acid_jazz");
-                elmnt.scrollIntoView();
-            }
-            function nu() {
-                var elmnt = document.getElementById("nu");
-                elmnt.scrollIntoView();
-            }
-            function jazzstep() {
-                var elmnt = document.getElementById("jazzstep");
-                elmnt.scrollIntoView();
-            }
-            function garage() {
-                var elmnt = document.getElementById("garage");
-                elmnt.scrollIntoView();
-            }
-            function techno() {
-                var elmnt = document.getElementById("techno");
-                elmnt.scrollIntoView();
-            }
-            function dnb() {
-                var elmnt = document.getElementById("dnb");
-                elmnt.scrollIntoView();
-            }
-            function trance() {
-                var elmnt = document.getElementById("trance");
-                elmnt.scrollIntoView();
-            }
-            function goa() {
-                var elmnt = document.getElementById("goa");
-                elmnt.scrollIntoView();
-            }
-            function dream() {
-                var elmnt = document.getElementById("dream");
-                elmnt.scrollIntoView();
-            }
-            function trip() {
-                var elmnt = document.getElementById("trip");
-                elmnt.scrollIntoView();
-            }
-            function dub() {
-                var elmnt = document.getElementById("dub");
-                elmnt.scrollIntoView();
-            }
-            function trap() {
-                var elmnt = document.getElementById("trap");
-                elmnt.scrollIntoView();
-            }
-            function future() {
-                var elmnt = document.getElementById("future");
-                elmnt.scrollIntoView();
-            }
-            function chill() {
-                var elmnt = document.getElementById("chill");
-                elmnt.scrollIntoView();
-            }
-            function idm() {
-                var elmnt = document.getElementById("idm");
-                elmnt.scrollIntoView();
-            }
-            function folktronica() {
-                var elmnt = document.getElementById("folktronica");
-                elmnt.scrollIntoView();
-            }
-            function synthpop() {
-                var elmnt = document.getElementById("synthpop");
-                elmnt.scrollIntoView();
-            }
-            function synthwave() {
-                var elmnt = document.getElementById("synthwave");
-                elmnt.scrollIntoView();
-            }
-            function vaporwave() {
-                var elmnt = document.getElementById("vaporwave");
-                elmnt.scrollIntoView();
+            // SCROLLER
+            function scroller(scroll_pos) {
+                document.getElementById(scroll_pos).scrollIntoView();
             }
 
             // COUNTER
             const countEl = document.getElementById('counter');
-
             updateVisitCount();
-
             function updateVisitCount() {
                 fetch('https://api.countapi.xyz/hit/sdmusicappreciation/test')
                 // https://api.countapi.xyz/hit/sdmusicappreciation/electronic
@@ -1264,6 +1156,26 @@
                 .then(res => {
                     countEl.innerHTML = res.value;
                 })
+            }
+
+            // MOBILE MENU
+            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+            function mobile_btn_func() {
+            document.getElementById("btn_group_mobile_id").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+            if (!event.target.matches('.menu_button_mobile')) {
+                var dropdowns = document.getElementsByClassName("btn_group_mobile");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+            }
             }
         </script>
     </body>

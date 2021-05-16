@@ -5,6 +5,10 @@ body {
     color: white;
 }
 
+button {
+	z-index: 999;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -46,6 +50,13 @@ padding-right: 5px;
 /* #endregion GENERAL STYLES */
 
 /* #region STYLE_BUTTONS */
+.style_btn {
+	display: block;
+	position: fixed;
+	width: 40px;
+	bottom: 5px;
+}
+
 .dark {
     background-color: white;
     color: black;
@@ -57,13 +68,9 @@ padding-right: 5px;
 }
 
 .float_plus{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:170px;
-	/* right:94%; */
-	right: 10px;
-	background-color:#0C9;
+	width:40px;
+	height:40px;
+	background-color: rgba(85, 255, 212, 0.8);
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
@@ -71,13 +78,9 @@ padding-right: 5px;
 }
 
 .float_minus{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:105px;
-	/* right:94%; */
-	right: 10px;
-	background-color:#0C9;
+	width:40px;
+	height:40px;
+	background-color: rgba(85, 255, 212, 0.8);
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
@@ -85,13 +88,9 @@ padding-right: 5px;
 }
 
 .float_mode{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	/* right:94%; */
-	right: 10px;
-	background-color:#0C9;
+	width:40px;
+	height:40px;
+	background-color: rgba(85, 255, 212, 0.8);
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
@@ -99,166 +98,70 @@ padding-right: 5px;
 }
 /* #endregion STYLE_BUTTONS */
 
-/* #region SECTION SCROLLER */
-.intro_scroll {
-    position:fixed;
-	width:100px;
-	height:30px;
-	/* bottom:160px; */
-    bottom: 97%;
-	right: 94%;
-	background-color:#0C9;
-	color:#FFF;
-	border-radius:15px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
+/* #region MOBILE MENU */
+@media screen and (min-width: 600px) {
+	.menu_mobile_container {
+		/* visibility: hidden; */
+	}
 }
 
-.early_scroll {
-    position:fixed;
-	width:100px;
-	height:30px;
-	bottom:94.5%;
-	right: 94%;
-	background-color:#0C9;
-	color:#FFF;
-	border-radius:15px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-}
-
-.game_comp_scroll {
-    position:fixed;
-	width:100px;
-	height:30px;
-	bottom:92%;
-	right: 94%;
-	background-color:#0C9;
-	color:#FFF;
-	border-radius:15px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-}
-
-.edm_scroll {
-    position:fixed;
-	width:100px;
-	height:30px;
-	bottom:89.5%;
-	right: 94%;
-	background-color:#0C9;
-	color:#FFF;
-	border-radius:15px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-}
-
-.soundtrack_scroll {
-    position:fixed;
-	width:100px;
-	height:30px;
-	bottom:29.5%;
-	right: 94%;
-	background-color:#0C9;
-	color:#FFF;
-	border-radius:15px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-}
-
-/* #endregion SECTION SCROLLER */
-
-/* #region SUBSCROLL*/
 #subscroll {
-    position:fixed;
-	width:130px;
-	height:30px;
-	right: 90%;
-	background-color:rgba(0, 204, 153, 0.521);
-	color:#FFF;
-	border-radius:15px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
+	font-style: italic;
+	min-width:140px;
 }
 
-.chicago{
-    bottom: 87%;
+.btn_mobile {
+	min-width:140px;
+	font-weight: bold;
 }
 
-.deep {
-    bottom: 84.5%;
+.menu_button_mobile {
+	position:fixed;
+	background-color: rgba(85, 255, 212, 0.9);
+	color: white;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	height: 19px;
+	top: 1px;
 }
 
-.prog {
-    bottom: 82%;
+.menu_button_mobile:hover, .menu_button_mobile:focus {
+	background-color: rgba(51, 158, 131, 0.9);;
 }
 
-.acid_house {
-    bottom: 79.5%;
+.menu_mobile_container {
+	position: fixed;
+	top: 20px;
+	display: inline-block;
 }
 
-.acid_jazz {
-    bottom: 77%;
+.btn_group_mobile {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	width: 140px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
 }
 
-.nu {
-    bottom: 74.5%;
+.btn_group_mobile a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
 }
 
-.jazzstep {
-    bottom: 72%;
-}
-.garage {
-    bottom: 69.5%;
-}
-.techno {
-    bottom: 67%;
-}
-.dnb {
-    bottom: 64.5%;
-}
-.trance {
-    bottom: 62%;
-}
-.goa {
-    bottom: 59.5%;
-}
-.dream {
-    bottom: 57%;
-}
-.trip {
-    bottom: 54.5%;
-}
-.dub {
-    bottom: 52%;
-}
-.trap {
-    bottom: 49.5%;
-}
-.future {
-    bottom: 47%;
-}
-.chill {
-    bottom: 44.5%;
-}
-.idm {
-    bottom: 42%;
-}
-.folktronica {
-    bottom: 39.5%;
-}
-.synthpop {
-    bottom: 37%;
-}
-.synthwave {
-    bottom: 34.5%;
-}
-.vaporwave {
-    bottom: 32%;
+.menu_mobile_container a:hover {
+	background-color: #ddd;
 }
 
+.show {
+	display: block;
+}
 
-/* #endregion SUBSCROLL */
+/* #endregion MOBILE MENU */
 
 /* #region PAGE DIVIDERS */
 .inner {
@@ -273,32 +176,19 @@ padding-right: 5px;
 /* #endregion PAGE DIVIDERS */
 
 /* #region INFO BLOCKS */
-.intro_container {
-    /* margin: 0em 20em 10em 20em; */
+.intro_container, .early_electronic, .game_music, .edm_explainer, .extra_songs, .soundtracks  {
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 5em;
 }
 
-.early_electronic {
-    margin: 5em 20em 10em 20em;
+@media screen and (max-width: 600px) {
+	.intro_container, .early_electronic, .game_music, .edm_explainer, .extra_songs, .soundtracks {
+		margin: 0 1em 3em 1em !important;
+	}
+	
 }
 
-.game_music {
-    margin: 5em 20em 10em 20em;
-}
-
-.edm_explainer {
-    margin: 5em 20em 10em 20em;
-}
-
-.extra_songs {
-    margin: 5em 20em 10em 20em;
-}
-
-.soundtracks {
-    margin: 5em 20em 10em 20em;
-}
 /* #endregion INFO BLOCKS */
 
 /* #region VIDEO BLOCKS */
@@ -339,14 +229,23 @@ padding-right: 5px;
     margin-top: 1em;
 }
 
+video {
+	width: 100%;
+}
+
 .quote {
     font-style: italic;
     margin: 0em 10% 0 10%;
 }
+
+@media screen and (max-width: 850px) {
+	.details, .artist, .film, .year, .genre {
+		margin: .5em 0px 0px 0px !important;
+	}
+}
 /* #endregion VIDEO BLOCKS */
 
-
-/* custom scrollbar */
+/* #region SCROLLBAR */
 ::-webkit-scrollbar {
 	width: 40px;
   }
@@ -366,3 +265,4 @@ padding-right: 5px;
   ::-webkit-scrollbar-thumb:hover {
 	background-color: #a8bbbf;
   }
+  /* #endregion SCROLLBAR */
