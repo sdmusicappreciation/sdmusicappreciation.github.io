@@ -57,6 +57,16 @@ padding-right: 5px;
 	bottom: 5px;
 }
 
+.float_home {
+	width:40px;
+	height:40px;
+	background-color: rgba(85, 255, 212, 0.8);
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
 .dark {
     background-color: white;
     color: black;
