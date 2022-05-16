@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadway</title>
+
+    <link rel="stylesheet" href="style_broadway.css">
+    <script src="script_broadway.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="style_btn">
+        <button class="float_home"><a href="https://sdmusicappreciation.github.io/" target="#">🏠</a></button>
+        <button class="float_plus" onclick="plus()">➕</button>
+        <button class="float_minus" onclick="minus()">➖</button>
+        <button class="float_mode" onclick="mode()">🌞<br>🌙</button>
+    </div>
+    <header class="header--top"></header>
+    <nav class="nav" id="main">
+        <button class="nav__toggle">
+            <span class="hamburger"></span>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#history" class="nav__link">History</a></li>
+            <li class="nav__item"><a href="#composers" class="nav__link">composers</a></li>
+            <li class="nav__item"><a href="#off-broadway" class="nav__link">off-broadway</a></li>
+            <li class="nav__item"><a href="#all-stars" class="nav__link">All Stars</a></li>
+            <li class="nav__item"><a href="#disney" class="nav__link">Disney</a></li>
+            <li class="nav__item"><a href="#contemporary" class="nav__link">Contemporary</a></li>
+            <li class="nav__item"><a href="#awards" class="nav__link">Awards</a></li>
+            <li class="nav__item"><a href="#controversy" class="nav__link">Controversy</a></li>
+            <li class="nav__item"><a href="#haunting" class="nav__link">Haunting</a></li>
+            <li class="nav__item"><a href="#prime-time" class="nav__link">Prime Time</a></li>
+          </ul>
+    </nav>
+    <main class="site-wrap">
+        <section class="heading--info" id="heading">
+            <p>“Broadway” is located between 41st and 54th streets – from 6th Avenue to 9th Avenue.  There are 40 Broadway theaters, but only 4 are actually on Broadway in NYC:  The Marquis (46th Street), The Palace (47th Street), The Winter Garden (50th Street) and The Broadway (53rd Street). The rest are in the city’s Theatre District, with the exception of the Vivian Beaumont Theater at Lincoln Centre. Off broadway theatres usually seat between 100 to 499 people while Broadway theaters seat 500+.</p>
+        </section>
+        <section class="playlist" id="playlist">
+            <header class="header">
+                <h2>Playlist</h2>
+                <span>43 videos</span>
+            </header>
+            <div class="video">
+                <iframe loading="lazy" width="464" height="315" src="https://www.youtube.com/embed/i2E7p59sRvQ?list=PLwrFRdSVpnCGurtmjQRtq9rt81LUHuGJy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="sect" id="history">
+            <header class="sect--header">
+                <h1>A History of Broadway</h1>
+            </header>
+            <div class="sect--info">
+                <p>In 1750, Thomas Kean and Walter Murray opened one of the first theatres in New York City on Nassau Street. It was large enough to hold 280 patrons. Patrons flocked newly established theaters to see such ballad operas as John Gay's The Beggar's Opera and Shakespearean plays like The Merchant of Venice. </p>
+            </div>
+            <ul class="videos">
+                <li class="video">
+                    <iframe loading="lazy" width="562" height="382" src="https://www.youtube.com/embed/i2E7p59sRvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span class="musical">The Beggar's Opera</span>
+                    </div>
+                </li>
+                <li class="video">
+                    <iframe loading="lazy" width="562" height="382" src="https://www.youtube.com/embed/38hzccMhY9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span class="musical">The Merchant Of Venice</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="sect--info">
+                <p>Early theater in New York was separated according to class. Opera was attended by the wealthy. Melodramas and Minstrel shows were popular among the middle class. The working class went to more affordable variety shows. Musicals weren't performed until the mid 19th century. Prior to this, performances were non-musical acts. Considered the first modern musical, The Black Crook came out in 1866 and contained both original music and choreographed dance. It was a little less than six hours long. Comic Operas by Gilbert and Sullivan were also extremely popular during that time.</p>
+            </div>
+            <ul class="videos">
+                <li class="video">
+                    <iframe loading="lazy" width="562" height="382" src="https://www.youtube.com/embed/wIe3MKVGuXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span class="song">March of the Amazons</span>
+                        <span class="musical">The Black Crook</span>
+                    </div>
+                </li>
+                <li class="video">
+                    <iframe loading="lazy" width="562" height="382" src="https://www.youtube.com/embed/zRhdtpWmzi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span class="musical">HMS Pinafore</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="sect--info">
+                <h2>Tin Pan Alley</h2><span> (1890-1930)</span>
+                <p>Popular music met big business with big results. In Tin Pan Alley (28th Street between Broadway and Fifth Avenue in New York City) numerous music publishing houses poured forth popular songs each year. The musical theater and the private parlor rang with the sounds of ragtime, romantic ballads, and comedy songs.</p>
+                <p>Famous composers we often associate with Broadway - Cole Porter, Rodgers and Hart, George Gershwin, etc. - began composing music for Broadway shows during the "raging" 1920's. </p>
+            </div>
+        </section>
+            <section class="sect" id="composers">
+                <header class="sect--header">
+                    <h1>Composers</h1>
+                </header>
+            <div class="composer">
+                <ul class="videos">
+                    <li class="video">
+                        <iframe loading="lazy" width="261" height="261" src="https://www.youtube.com/embed/rD9rQrbU-HM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="musical">"Give my Regards to Broadway"</span>
+                        </div>
+                    </li>
+                    <li class="video">
+                        <iframe loading="lazy" width="261" height="261" src="https://www.youtube.com/embed/yGsVguiM5ao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="musical">"Over There"</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="composer--info">
+                    <h2>George M. Cohan</h2>
+                    <p>Known prior to WWI as "the man who owned Broadway", Cohan wrote light comedic musical dramas during the first two decades of the 20th century. Cohan enjoyed his first musical hit with “Little Johnny Jones” in 1904. It featured songs such as "I'm a Yankee Doodle Dandee" and "Give my regards to Broadway." </p>
+                    <p>n 1917, when America entered World War I, Cohan was inspired to compose “Over There,” the song that would become his greatest hit. Americans coast to coast listened to the recording made by popular singer Nora Bayes. Twenty-five years later, President Franklin Delano Roosevelt awarded Cohan the Congressional Medal of Honor for the patriotic spirit expressed in this war song. </p>
+                </div>
+            </div>
+            <div class="composer">
+                <ul class="videos">
+                    <li class="video">
+                        <iframe loading="lazy" width="261" height="261" src="https://www.youtube.com/embed/NghjBMn6ZJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"Summertime"</span>
+                            <span class="musical">Porgy and Bess</span>
+                        </div>
+                    </li>
+                    <li class="video">
+                        <iframe loading="lazy" width="261" height="261" src="https://www.youtube.com/embed/M3XwQqTAK3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="musical">Strike Up The Band</span>
+                            <span class="date">1929</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="composer--info">
+                    <h2>George Gershwin</h2>
+                    <p>Gershwin began work in the music industry at 15 as a try-out pianist (or "song plugger"). His first original song was published in 1916: “When You Want ‘Em You Can’t Get ‘Em.”</p>
+                    <p>By 1918 he had shown enough promise to be hired by Harms, Inc., as a songwriter at a weekly salary. His first big success was in 1919 with the song “Swanee” (words by Irving Caesar), introduced by Al Jolson in “Sinbad.” In the same year he composed his first complete score, for the successful musical “La, La, Lucille.”</p>
+                    <p><span class="heading--p">Musicals:</span> “Lady, Be Good!” (1924), “Primrose” (1924), “Tell Me More” (1925), “Tip-Toes” (1925), “Oh, Kay!” (1926), “Funny Face” (1927), “Rosalie” (1928), “Treasure Girl” (1928), “Show Girl” (1929), “Strike Up the Band” (1929) “Girl Crazy” (1930); “Let ‘Em Eat Cake” (1933); “Pardon My English” (1933)</p>
+                    <p><span>Opera:</span> “Porgy and Bess” (1935)</p>
+                    <p><span>Concert Works: </span>“Rhapsody in Blue” (1924); “Piano Concerto in F” (1925), “Three Preludes for Piano” (1926); “An American in Paris” (1928)</p>
+                </div>
+            </div>
+            <div class="composer">
+                <ul class="videos">
+                    <li class="video">
+                        <iframe loading="lazy" width="261" height="261"  src="https://www.youtube.com/embed/M7z43oIt2GM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"Anything Goes"</span>
+                            <span class="date">1988</span>
+                        </div>
+                    </li>
+                    <li class="video">
+                        <iframe loading="lazy" width="261" height="261"  src="https://www.youtube.com/embed/czH2tAlwMDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span>"Too Darn Hot"</span>
+                            <span class="musical">Kiss Me Kate</span>
+                            <span class="date">2019</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="composer--info">
+                    <h2>Cole Porter</h2>
+                    <p>In a similar style as Gershwin, Porter tended to disregard accepted formulas for the popular song.</p>
+                    <p>Porter composed worldly, witty, occasionally risqué lyrics with unusual melodic lines to match. He contributed to various shows with songs such as “Let’s Do It” (1928), “What Is This Thing Called Love” (1929), “You Do Something to Me” (1929), and “Love for Sale” (1930).</p>
+                    <p>He would later go on to compose full scores including  Anything Goes (1934), Jubilee (1935), Rosalie (1937), Panama Hattie (1940), and Kiss Me, Kate (1948).</p>
+                </div>
+            </div>
+            <div class="composer">
+                <ul class="videos">
+                    <li class="video">
+                        <iframe loading="lazy" width="464" height="315" src="https://www.youtube.com/embed/Wcd4U7ohdUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"Falling in Love with Love"</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="composer--info">
+                    <h2>Rodgers and Hart</h2>
+                    <p>Known for their musical comedies, Richard Rodgers and Lorenz Hart first met while attending Columbia University. Rodgers provided the tunes which hart matched with clever and poetic lyrics. They went on to produce hit after hit during the 1920s and 30s. Over the course of their carrer, they would write over 500 songs including "Falling in Love With Love" (1938), "My Funny valentine" (1937), and "Where or When" (1937).</p>
+                </div>
+            </div>
+            <div class="composer">
+                <ul class="videos">
+                    <li class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/At2bdj5QZhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="musical">Show Boat</span>
+                            <span class="date">1995</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="composer--info">
+                    <h2>Hammerstein and Kern</h2>
+                    <p>Up until the Hammerstein and Kern production of Showboat (1927), all American musicals were based in comedy.</p>
+                </div>
+            </div>
+            <div class="composer">
+                <ul class="videos">
+                    <li class="video">
+                        <iframe loading="lazy" width="562" height="382" src="https://www.youtube.com/embed/KNEUtN21cuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"Oh What A Beautiful Morning"</span>
+                            <span class="musical">Oklahoma!</span>
+                        </div>
+                    </li>
+                    <li class="video">
+                        <iframe loading="lazy" width="562" height="382" src="https://www.youtube.com/embed/Q2AIofXo0EQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"Finale"</span>
+                            <span class="musical">Carousel</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="composer--info">
+                    <h2>Rogers and Hammerstein</h2>
+                    <p>The first musical written by Rogers and Hammerstein, Oklahoma!, revived Broadway after the depression. First performed in 1943, It paved the way for Broadway's golden years. Carousel was adapted for Broadway soon after in 1945.  Richard Rodgers wrote in his autobiography, “One of the most frequent questions I am asked is: ‘What is your favorite of all your musicals?’ My answer is Carousel. Oscar never wrote more meaningful or more moving lyrics, and to me, my score is more satisfying that any I’ve ever written.”</p>
+                </div>
+            </div>
+        </section>
+        <section class="sect" id="off-broadway">
+            <header class="sect--header">
+                <h1>Off Broadway</h1>
+            </header>
+            <div class="sect--info">
+                <h2>Mac the Knife</h2>
+                <p>A Three Penny Opera was the first really significant successful Off-Broadway musical. It premiered in the US in 1933, with a revival opening in 1954. First produced in Berlin, Germany in 1928, this musical was adapted from the earlier mentioned English ballad opera, The Beggar's Opera by John Gay.</p>
+            </div>
+            <ul class="videos">
+                <li class="video">
+                    <iframe loading="lazy" width="365" height="274" src="https://www.youtube.com/embed/AzB6Pf-jemo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span>Tony Awards, 2006</span>
+                    </div>
+                </li>
+                <li class="video">
+                    <iframe loading="lazy" width="365" height="274" src="https://www.youtube.com/embed/avuBkiIpemg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span>"National Theatre, 2016"</span>
+                    </div>
+                </li>
+                <li class="video">
+                    <iframe loading="lazy" width="365" height="274" src="https://www.youtube.com/embed/lhg2VlayHTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span>Ella Fitzgerald</span>
+                    </div>
+                </li>
+                <li class="video">
+                    <iframe loading="lazy" width="365" height="274" src="https://www.youtube.com/embed/jJ-b8YzsoVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span>Steam Powered Giraffe</span>
+                    </div>
+                </li>
+                <li class="video">
+                    <iframe loading="lazy" width="365" height="274" src="https://www.youtube.com/embed/hZoDJoBnf4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span>Sinatra and Martin</span>
+                    </div>
+                </li>
+                <li class="video">
+                    <iframe loading="lazy" width="365" height="274" src="https://www.youtube.com/embed/_QXJ3OXWaOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span>Original</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="sect" id="all-stars">
+            <header class="sect--header">
+                <h1>Broadway All-Stars</h1>
+            </header>
+            <div class="musical--expanded">
+                <ul class="videos">
+                    <li class="video">
+                        <iframe loading="lazy" width="562" height="382" src="https://www.youtube.com/embed/lCAdkACAH78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"Music Of The Night"</span>
+                        </div>
+                    </li>
+                    <li class="video">
+                        <iframe loading="lazy" width="562" height="382" src="https://www.youtube.com/embed/Yq6NUKNF3LQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"All I Ask Of You"</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="musical--info">
+                    <h2>Phantom of the Opera</h2>
+                    <p>Phantom of the Opera opened in 1996 for over 12,000 performances, continuing to this day. It is currently the longest running show at 30+ years. Composed by Andrew Lloyd Webber, this musical/opera crossover is based on the French novel Le Fantôme de l'Opéra by Gaston Leroux.  </p>
+                    <p>15 actors have played the role of the Phantom on Broadway, with 5 temporary replacements. Norm Lewis was the first African-American actor to perform the role and Ali Ewoldt was the first Asian-American to be cast in the role of Christine.</p>
+                    <p>Each actor playing the role of the Phantom gets a custom made mask. As of the show’s 29-year Broadway run, 300 masks have been custom-made.</p>
+                </div>
+            </div>
+            <div class="musical--expanded">
+                <ul class="videos">
+                    <li class="video">
+                        <iframe loading="lazy" width="562" height="316" src="https://www.youtube.com/embed/gpDbvlAI_A0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"Do you hear the people sing?"</span>
+                        </div>
+                    </li>
+                    <li class="video">
+                        <iframe loading="lazy" width="562" height="316" src="https://www.youtube.com/embed/-p6OH7FoWoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"I Dreamed a Dream"</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="musical--info">
+                    <h2>Les Misérables</h2>
+                    <p>The sung-through musical was originally written in French by Claude-Michel Schönberg, Alain Boubil and Jean-Marc Natel and staged in 1980 as a rock opera. After a short 105 performance run in Paris, Cameron Mackintosh (producer of Cats) heard the soundtrack and decided to produce an English-language version for a British audience. Working with the Royal Shakespeare Company, Mackintosh’s Misérables opened in 1985 with new lyrics by Herbert Kretzmer and James Fenton. It would reach Broadway in 1987. The legendary show about ex-convict Jean Valjean and his rival, policeman Javert, received mixed reviews from critics but blew audiences away.</p>
+                    <p>One early review: The Observer’s Michael Ratcliffe dismissed the show as “a witless and synthetic entertainment.”</p>
+                    <p>Les Miserables celebrated its 10th anniversary with a gala concert at the Royal Albert Hall, London. The concert starred the original Jean Valjean, Colm Wilkinson. The finale featured 17 different Jean Valjeans from around the world singing in different languages.</p>
+                </div>
+            </div>
+            <div class="musical--expanded">
+                <ul class="videos">
+                    <li class="video">
+                        <iframe loading="lazy" width="464" height="315" src="https://www.youtube.com/embed/nbJEpcteKg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"If I Were A Rich Man"</span>
+                        </div>
+                    </li>
+                    <li class="video">
+                        <iframe loading="lazy" width="464" height="315" src="https://www.youtube.com/embed/--qRpqv-89M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"Fiddler on the Roof"</span>
+                            <span>Cannonball Adderley, 1967</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="musical--info">
+                    <h2>Fiddler on the Roof</h2>
+                    <span>Premiered on Broadway: 1964</span>
+                    <p>The music for Fiddler was composed by Jerrold Lewis "Jerry" Bock with the help of lyricist Sheldon Harnick.</p>
+                    <div class="quote">
+                        <p>“Sheldon and I, we’d become somewhat familiar with the book, we’d separate and I would guess as to what kind of music in terms of ambience, period, character, and so forth. So I would send Sheldon a half a dozen melodic guesses,” says Bock.</p>
+                        <p>“I always looked forward to these tapes that Jerry would send,” Harnick continues. “On each tape, one or two of them would coincide with ideas I had for lyrics.” What Bock tells “Shel” in his recorded introduction on his melodic demo of “If I Were a Rich Man” is priceless. (You’ll have to watch to hear it.)</p>
+                    </div>
+                    <p>The original 1964 Broadway production had the first musical theatre run in history to surpass 3,000 performances. Fiddler held the record for the longest-running Broadway musical for almost 10 years until it was surrpassed by Grease.</p>
+                </div>
+            </div>
+            <div class="musical--expanded">
+                <ul class="videos">
+                    <li class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/AmfJwkbO6Nc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">Medley</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="musical--info">
+                    <h2>The Music Man</h2>
+                    <p>The Music Man premiered on Broadway on December 19, 1957. It went on to win five Tony Awards, including the prize for Best Musical, and ran for 1,375 performances. The Smithsonian Institution ranks The Music Man as one of the “great glories” of American popular culture.</p>
+                </div>
+            </div>
+            <div class="musical--expanded">
+                <ul class="videos">
+                    <li class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/cJ5iKRpE41E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"This is the Moment"</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="musical--info">
+                    <h2>Jekyll and Hyde</h2>
+                    <p>Premiered on Broadway: 1997 (1,543 performances)</p>
+                </div>
+            </div>
+        </section>
+        <section class="sect" id="disney">
+            <header class="sect--header">
+                <h1>Disney on Broadway</h1>
+            </header>
+            <div class="musical--expanded">
+                <ul class="videos">
+                    <li class="video">
+                        <iframe loading="lazy" width="562" height="382" src="https://www.youtube.com/embed/ewOAsUWQJvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"Circle of Life"</span>
+                        </div>
+                    </li>
+                    <li class="video">
+                        <iframe loading="lazy" width="562" height="382" src="https://www.youtube.com/embed/CCVWv1RqarI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"Circle of Life"</span>
+                            <span>China</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="musical--info">
+                    <h2>Lion King</h2>
+                    <p>Lion King is the third longest-running (since 1997 with over 9,000 performances) and highest grossing Broadway production of all time. Many of the songs were written by Elton John.</p>
+                    <p>While originally based on the 1924 film, there were several changes and aditions made to the theater production. These include changing of gender roles to include more female leading characters, as well as new songs and scenes.</p>
+                    <p>In China, one of the songs was adapted to a well-known Chinese pop song, "Laoshu ai dami" or "Mice Love Rice".</p>
+                </div>
+            </div>
+            <ul class="videos">
+                <li class="video">
+                    <iframe loading="lazy" width="562" height="382" src="https://www.youtube.com/embed/1VNGIQ51aiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span class="song">"Step in Time"</span>
+                        <span class="musical">Merry Poppins</span>
+                    </div>
+                </li>
+                <li class="video">
+                    <iframe loading="lazy" width="562" height="382" src="https://www.youtube.com/embed/FpT94oylSaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span class="song">"Friend Like Me"</span>
+                        <span class="musical">Aladin</span>
+                    </div>
+                </li>
+                <li class="video">
+                    <iframe loading="lazy" width="562" height="382" src="https://www.youtube.com/embed/ntreRlCJMiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span class="song">Medley</span>
+                        <span class="musical">Newsies</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="sect" id="contemporary">
+            <header class="sect--header">
+                <h1>Contemporary Favorites</h1>
+            </header>
+            <ul class="videos">
+                <li class="video">
+                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/O5V9KwppMfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span class="song">"Defying Gravity"</span>
+                        <span class="musical">Wicked</span>
+                        <span class="info">Composer: Stephen Schwartz</span>
+                    </div>
+                </li>
+                <li class="video">
+                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/txG99YiQcNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span class="song">"Family Home Evening"</span>
+                        <span class="musical">Book of Morman</span>
+                    </div>
+                </li>
+                <li class="video">
+                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Erjdq6wwRuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video--info">
+                        <span class="musical">Waitress</span>
+                        <p>The musical Waitress, which premiered on March 25, 2016 is the first musical to feature an all-female creative team. Music and lyrics by Sara Bareilles, book by Jessie Nelson, choreography by Lorin Latarro, and direction by Diane Paulus, the top 4 creative jobs were done by women, along with the costume design and musical direction also being handled with an all woman creative team.</p>
+                        <p>The only other musical with a woman power team was the 1978 Broadway musical Runaways, which had the book, music, lyrics, choreography and direction done by one woman - Elizabeth Swados</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="sect" id="awards">
+            <header class="sect--header">
+                <h1>Awards</h1>
+            </header>
+            <div class="sect--info">
+                <p>Broadway hosts many of the best actors from all over the world. Various Award ceremonies were established to recognize their efforts. The Tony Awards, established in 1947, highlight those who invested their hearts and souls into theater. More specific to Broadway, the Drama Desk Awards are given to Broadway and off-Broadway productions.</p>
+            </div>
+            <div class="video">
+                <iframe loading="lazy" width="562" height="354" src="https://www.youtube.com/embed/UeOy1WKeTRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video--info">
+                    <p>The first Tony Awards was originally called  Antoinette Perry Awards for Excellence in Theatre. The name of the award was changed when Brok Pemberton handed out an award and called it a “Tony” – which was Antoinette’s nickname.  However, no actor legally named Tony has ever won a Tony.</p>
+                    <p>For the first 2 years, the winners were not given statues as awards but pocket sized awards along with scrolls. The men were given cigarette lighters and the women were given a make up compact.</p>
+                    <p>In 1947, you could buy a ticket to the Tonys for just $7. The success of the event shot up the prices to $10 in 1948. Today, it costs a whopping $2990 to purchase a ticket to the Tonys.</p>
+                </div>
+            </div>
+        </section>
+        <section class="sect" id="controversy">
+            <header class="sect--header">
+                <h1>Controversy</h1>
+            </header>
+            <h2><a href="https://music.si.edu/story/cradle-will-rock-working-mans-musical">The Cradle will Rock</a>, directed by Orson Welles, was put on despite:</h2>
+            <div class="video">
+                <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/OP7_XI_w8Xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="sect--info">
+                <ol>
+                    <li>The doors to the theater were chained shut and under guard four days before opening night.</li>
+                    <li>Actors could not appear on any unsanctioned stage (actors' union)</li>
+                    <li>They would have to pay the musicians their full rate instead of the reduced FTP rate, as well as back pay for previous rehearsals, and they would also have to hire more musicians to comply with standard Broadway contracts. (musicians' union)</li>
+                    <li>The actors were unable to access any of their costumes, props, or set pieces.</li>
+                </ol>
+                <p>Solution: The audience was dragged to a different theater, the actors perform while hidden amongst said audience, and the composer himself accompanied on piano.</p>
+                <span>Result: The show was a hit!</span>
+            </div>
+            <div class="sect--info">
+                <h2>The first ever nude Broadway production was Hair</h2>
+                <p>Hair: The American Tribal Love-Rock Musical, a product of the hippie counterculture and sexual revolution of the late 1960s opened on Broadway in 1968 and ran for 1,750 performances. The most controversial element in the play was a brief nude scene with the entire cast that ended the first act.</p>
+                <div class="audio">
+                    <iframe src="https://www.npr.org/player/embed/607339204/607652345" width="700" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>
+                </div>
+            </div>
+            <div class="video">
+                <iframe loading="lazy" width="650" height="261" src="https://www.youtube.com/embed/DVh83F0sLes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="sect--info">
+                    <h2>Moose Murders</h2>
+                    <p>Moose Murders is the shortest running play title. It never made it past its first performance after being torn apart by critics. Many other plays are measured on a “badness” scale by comparing it to this one. It joins others that did not make it past opening night including: Glory Days, Brothers, and Frankenstein the Musical</p>
+                </div>
+            </div>
+        </section>
+        <section class="sect" id="haunting">
+            <header class="sect--header">
+                <h1>A Haunting Tale...</h1>
+            </header>
+            <div class="video">
+                <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/_Vp-e7B26wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="sect--info">
+                    <p>Amongst the many Broadway Theatres that are believed to be haunted, the Palace Theatre is said to have almost 100 spirits are supposedly stalking the theatre. The most freuqent phantom is Judy Garland who performed in the theatre in the 1950s. Many people have seen her appear near the door in the orchestra pit. The other common visitor is Louis Bossalina, an acrobat who was gravely injured during a high-wire act in 1935 when the theatre was a vaudeville house.</p>
+                </div>
+            </div>
+        </section>
+        <section class="sect" id="prime-time">
+            <header class="sect--header">
+                <h1>Prime Time</h1>
+            </header>
+            <div class="musical--expanded">
+                <ul class="videos">
+                    <li class="video">
+                        <iframe loading="lazy" width="500" height="500" src="https://www.youtube.com/embed/fVmBtNaDXQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"Oh, Streetcar!"</span>
+                            <span class="musical">The Simpsons</span>
+
+                        </div>
+                    </li>
+                    <li class="video">
+                        <iframe loading="lazy" width="500" height="500" src="https://www.youtube.com/embed/MneWc3NYrus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="song">"The Road to Road Island"</span>
+                            <span class="musical">Family Guy</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+

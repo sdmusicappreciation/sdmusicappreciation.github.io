@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latin Music</title>
+    <link rel="stylesheet" href="style_latin.css">
+</head>
+<body>
+      <!-- Control Buttons -->
+      <div class="style_btn">
+        <button class="float_home"><a href="https://sdmusicappreciation.github.io/" target="#">🏠</a></button>
+        <button class="float_plus" onclick="plus()">➕</button>
+        <button class="float_minus" onclick="minus()">➖</button>
+        <button class="float_mode" onclick="mode()">🌞<br>🌙</button>
+    </div>
+    <!-- BANNER -->
+    <div class="banner">
+        <!-- <img loading="lazy" src="img/banner.jpeg" alt="Latin Banner"> -->
+    </div>
+    <hr class="outer">
+    <hr class="inner">
+    <hr class="outer">
+    <header>
+        <h1>Latin Music</h1>
+    </header>
+    <div class="intro text">
+        <p class="intro__text">
+            The music and dances are full of rhythms originating from Latin America, namely the Romance-speaking countries and territories of the Americas and Caribbean south of the United States.  There are many styles including:  cumbia, bachata, bossa nova, merengue, rumba, salsa, son, tango, Latin pop, and reggaetón.  The origins of these styles are from Spain, Africa, France, Portugal and Classical Music.
+        </p>
+    </div>
+    <hr class="outer">
+    <hr class="inner">
+    <hr class="outer"> 
+    <div class="video playlist">
+        <header>
+            <h2>Playlist</h2>
+        </header>
+        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLN-E2sR97caloaw1OI5OYIF6FZPtJZR_W" frameborder="0"  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <hr class="outer">
+    <hr class="inner">
+    <hr class="outer"> 
+    <div class="guitar--list">
+        <header>
+            <h1>Guitars</h1>
+        </header>
+        <div class="guitars">
+            <div class="guitar">
+                <img loading="lazy" src="img/bajo-sexto.jpg" alt="Bajo Sexto">
+                <div class="guitar--info">
+                    <h3>Bajo Sexto</h3>
+                    <span>Mexico</span>
+                    <span>Twelve Strings</span>
+                    <span>Bass Guitar</span>
+                </div>
+            </div>
+            <div class="guitar">
+                <img loading="lazy" src="img/tres-cuba.jpg" alt="Tres">
+                <div class="guitar--info">
+                    <h3>The Tres</h3>
+                    <span>Cuba</span>
+                    <span>Son</span>
+                </div>
+            </div>
+         
+
+            <div class="guitar">
+                <img loading="lazy" src="img/vihela.jpg" alt="Vihuela">
+                <div class="guitar--info">
+                    <h3>Vihuela</h3>
+                    <span>Mexico</span>
+                    <span>Five Strings</span>
+                    <span>Mariachi</span>
+                </div>
+            </div>
+            <div class="guitar">
+                <img loading="lazy" src="img/tiple.jpg" alt="Tiple">
+                <div class="guitar--info">
+                    <h3>The Tiple</h3>
+                    <span>Columbia, Chile, and Puerto Rico</span>
+                    <span>Twelve Strings</span>
+                </div>
+            </div>
+            <div class="guitar">
+                <img loading="lazy" src="img/viola.png" alt="Viola">
+                <div class="guitar--info">
+                    <h3>The Viola</h3>
+                    <span>Brazil</span>
+                    <span>Ten Strings</span>
+                </div>
+            </div>
+            <div class="guitar">
+                <img loading="lazy" src="img/cavaquinho.png" alt="Cavaquinho">
+                <div class="guitar--info">
+                    <h3>The Cavaquinho</h3>
+                    <span>Brazil</span>
+                    <span>Four Strings</span>
+                    <span>Samba and Choro</span>
+                </div>
+            </div>
+            <div class="guitar">
+                <img loading="lazy" src="img/craviola.jpg" alt="Craviola">
+                <div class="guitar--info">
+                    <h3>The Craviola</h3>
+                    <span>Brazil</span>
+                    <span>Siz - Twelve Strings</span>
+                </div>
+            </div>
+            <div class="guitar">
+                <img loading="lazy" src="img/cuatro-guitar.jpg" alt="Cuatro">
+                <div class="guitar--info">
+                    <h3>The Cuatro</h3>
+                    <span>Puerto Rico and Venezuela</span>
+                    <span>Four Strings</span>
+                </div>
+            </div>
+            <div class="guitar">
+                <img loading="lazy" src="img/guitarron.png" alt="Guitarron">
+                <div class="guitar--info">
+                    <h3>The Guitarron</h3>
+                    <span>Mexico</span>
+                    <span>Six strings</span>
+                    <span>Mariachi</span>
+                </div>
+            </div>
+            <div class="guitar">
+                <img loading="lazy" src="img/requinto.jpg" alt="Requinto">
+                <div class="guitar--info">
+                    <h3>Requinto</h3>
+                    <span>Mexico</span>
+                    <span>Six Strings</span>
+                    <span>18% smaller than standard guitar</span>
+                    <span>Mariachi</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="outer">
+    <hr class="inner">
+    <hr class="outer"> 
+    <section class="country" id="cuba">
+        <header>
+            <h1>Cuba</h1>
+        </header>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Clave</h3>
+                </header>
+                <p class="info--text">
+                    A handheld wooden block that is approximately as small as a large cigar. 
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/Ye7d5mPNfYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Conga</h3>
+                </header>
+                <p class="info--text">
+                    With its origins from Cuba, this single-headed drum commonly comes in a set of two. Each of the drums is tuned to a specific pitch, giving the drums its rhythmic beat.  
+                </p>
+            </div>
+            <div class="video">
+                <iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/gvk9emKdy08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Güiro</h3>
+                </header>
+                <p class="info--text">
+                    This handheld musical instrument is also believed to originate from Cuba. It is made with a piece of metal or wood. It is hollowed out and comes with grooves that run horizontally along its side. The güiro is played similar to a washboard – it’s held in one hand and using a stick, it’s scraped, which creates a rattling sound. Another way to play it is to strike it using a stick. 
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/p1pxM1nfLtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Son Cubano</h3>
+                </header>
+                <p class="info--text">
+                    Son Cubano features the Spanish guitar with African rhythms and percussion instruments of Bantu Origin. It usually consists of two vocalists, one playing claves, the other playing maracas, a tres bongo, a guiro, and a bass guitar.
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/FrELd75uLws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Rumba</h3>
+                </header>
+                <p class="info--text">
+                    Rumba (Ruma) is known as 'the dance of love' and features claves, batá drums, and congas.
+                </p>
+            </div>
+            <div class="video">
+                <iframe width="272" loading="lazy" height="153" src="https://www.youtube.com/embed/gJVT_5swkhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Cha Cha Cha</h3>
+                </header>
+                <p class="info--text">
+                    Cha Cha Cha differentiates itself from the previous two categories by picking up the tempo and adding a triple step. You will usually hear the cowbell, guiro, clave, and conga. 
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/LvMat6oEv60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Bolero</h3>
+                </header>
+                <p class="info--text">
+                    Bolero ballads originated in East Cuba during the 19th century. The lyrics, consisting of romantic folk poetry, set it apart from other dance music of the time. 
+                </p>
+                <div class="lyrics">
+                    <p>
+                        Two souls that God <br>
+                        had united in this world <br>
+                        Two souls that had loved each other, <br>
+                        that's what you and I were. <br>
+                        Dos almas que en el mundo <br>
+                        había unido Dios, <br>
+                        dos almas que se amaban, <br>
+                        eso éramos tú y yo. <br>
+                    </p>
+                </div>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/l0gRL6cu58I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Mambo</h3>
+                </header>
+                <p class="info--text">
+                    Mambo developed around the 1940s from a Cuban dance called the danzon, but also draws its origins from Cuban-Haitian and American jazz rhythms. 
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/kxTWdvU9eCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="quote">
+            <span>Cuban Flautist Antonio Arcaño described the mambo as</span>
+            <p>
+                "...a type of syncopated montuno that possesses the rhythmic charm, informality and eloquence of the Cuban people. The pianist attacks the mambo, the flute picks it up and improvises, the violin executes rhythmic chords in double stops, the double bass inserts a tumbao, the timbalero plays the cowbell, the güiro scrapes and plays the maracas rhythm, the indispensable tumba (conga drum) reaffirms the bass tumbao and strengthens the timbal."
+            </p>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Nuevo Trova</h3>
+                </header>
+                <p class="info--text">
+                    Nuevo Trova emerged in the wake of the Cuban Revolution. It was in essence political, its lyrics concentrating on  socialism, injustice, sexism, colonialism, racism and similar 'serious' issues. 
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/efLQs-iM8tE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Casino</h3>
+                </header>
+                <p class="info--text">
+                    Casino, also known as Cuban Salsa or Salsa Cubana, began in casinos deportivos (dance halls) during the 1950s. While similar rhythmically to the Cuban Mambo, the clave is used to emphasize the first and the eighth beet in Casino. 
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/RlrNPBfOowg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+    </section>
+    <hr class="outer">
+    <hr class="inner">
+    <hr class="outer"> 
+    <section class="country" id="argentina">
+        <header>
+            <h1>Argentina</h1>
+        </header>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Tango</h3>
+                </header>
+                <p class="info--text">
+                    Tango broke the norms of forced, conservative group dancing and created a space for men and women to express themselves. 
+                    <br>
+                    <br>
+                    It featured Strong influence of European classical dance music, including minuet, flamenco, polka, mazurka, and contradanza. Additional influence came from Argentine folk music, including the payada and milonga styles, and Uruguayan folk music such as pampas
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/S98-BIpzZuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Chacarera</h3>
+                </header>
+                <p class="info--text">
+                    Chacarera uses soft Spanish guitar and upbeat drum rhythms to create a lively and distinctive style. It belongs to a family of Ibero-American dances derived from baroque Contradance choreography. An outgrowth of Argentine "nativism," a nationalist "back-to-the-roots" inspired by increasing urbanization, the dance became particularly common in rural, farmland areas. 
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/anktaszpvOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Nueva Canción</h3>
+                </header>
+                <p class="info--text">
+                    Nueva Canción intermingled Andean folk sounds with socially committed lyrics, acting as a musical vehicle for the pro-democratic movement of the time.
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/TA7XqMez8MY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Chamamé</h3>
+                </header>
+                <p class="info--text">
+                    Chamamé is an Argentine take on the traditional music styles of Germany, Poland and Austria. Over time these new European folk styles were blended with the African, Caribbean and Amerindian rhythms of Latin America.
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/BwTmTiqYHIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+    </section>
+    <hr class="outer">
+    <hr class="inner">
+    <hr class="outer"> 
+    <section class="country" id="brazil">
+        <header>
+            <h1>Brazil</h1>
+        </header>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Pandeiro</h3>
+                </header>
+                <p class="info--text">
+                    This instrument resembles a tambourine. It is hand held and comes with small cymbals around its side. It’s widely popular in Brazilian music, especially capoeira and samba. 
+                </p>
+            </div>
+            <div class="video"><iframe width="272" height="153" src="https://www.youtube.com/embed/ugf-wWg-QnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Bossa Nova</h3>
+                </header>
+                <p class="info--text">
+                    Bossa nova started in the late 1950s and became an international preoccupation briefly in the early 1960s. Influenced by Afro-Brazilian samba and specific parts of American postwar culture — crooning, West Coast jazz — it connoted light and space, a highly rhythmic inner peace.
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/c5QfXjsoNe4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div> 
+    </section>
+    <hr class="outer">
+    <hr class="inner">
+    <hr class="outer">  
+    <section class="country" id="Chile">
+        <header>
+            <h1>Chile</h1>
+        </header>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Cueca</h3>
+                </header>
+                <p class="info--text">
+                    Cueca was declared the national dance of Chile by Pinochet in 1979. 
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/KJIZn2GFCSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div> 
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Nueva Canción</h3>
+                </header>
+                <p class="info--text">
+                    Famous Nueva Canción artists Claudio Iturra and Sergio Ortega wrote the song “Venceremos,” which became Salvador Allende’s campaign song and later the song of the Unidad Popular. Throughout the campaign period, this song would be heard at the marches and rallies of hundreds of thousands of Allende supporters. 
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="185" src="https://www.youtube.com/embed/BVlNB_7HqbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div> 
+    </section>
+    <hr class="outer">
+    <hr class="inner">
+    <hr class="outer">  
+    <section class="country" id="costa-rica">
+        <header>
+            <h1>Costa Rica</h1>
+        </header>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Calypso</h3>
+                </header>
+                <p class="info--text">
+                    Introduced in the 1800s by Jamaican immigrants, Costa Rica declared Calypso music as "National Patrimony" in 2012. The lyrics center around the Afro-Caribbean experience. It is most often sung in French Creole.
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="185" src="https://www.youtube.com/embed/t8bmLhdoKZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div> 
+    </section>
+    <hr class="outer">
+    <hr class="inner">
+    <hr class="outer">  
+    <section class="country" id="columbia">
+        <header>
+            <h1>Columbia</h1>
+        </header>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Vallenato</h3>
+                </header>
+                <p class="info--text">
+                    Vallenato, meaning "born in the valley," came out of the pastures of the Región Caribe in Colombia. The herders, moving cattle through the towns, would carry news from place to place, conveying these stories through song via singing, guitars, and the indigenous gaita flutes (aka kuisis).
+                    <br>
+                    <br>
+                    Over the years it developed, bringing in new instruments to compliment its complicating sound. The cane-like guachara scratches out a percussive sound; the caja is a small drum that originated with African slaves; and eventually the charming accordion joined the musical fray. 
+                    <br>
+                    <br>
+                    Four rhythms tied to an accompanying chord pattern make up the structure of vallenato music, usually dictated by the accordion. Son is mournful and slow, heavily accentuated with stress on the low notes of the accordion. Paseo is a slightly more upbeat version of Son, and is probably the most widely recorded. Merengue (not to be confused with the Dominican genre) was developed by Africans, and features a well-structured narrative style, consisting of 10-lines with strong internal rhymes. Finally, Puya is an elaboration of Merengue, increasing the speed and giving solos to each of the instruments.
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="185" src="https://www.youtube.com/embed/lIRQS71Ggfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Curralao</h3>
+                </header>
+                <p class="info--text">
+                    Now we move to the other side of the country, to a region bordering the Pacific where we discover Curralao, a music with deep roots in the African heritage of the area. 
+                    <br>
+                    <br>
+                    This music is defined by its four main instruments, each of which you can keep an eye out for in this video.
+                    <br>
+                    <br>
+                    First up is the cununo, a drum that keeps a 6-8 rhythm for the group. Then there's the guasa, a shaker made from bamboo and filled with dried seeds. Third, we have a bass drum. And, finally, possibly the most iconic part of the ensemble, the Marimba de Chonta.
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/Zl0uHMy-2X8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div> 
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Cumbia</h3>
+                </header>
+                <p class="info--text">
+                    Cumbia brings together all the cultures of Colombia, native, Spanish, and African. Originally, the music was simply vocals and complex percussion, joined by a dance meant to emulate the movement of slaves in shackles. As the art grew, it incorporated a broader variety of instruments, such as the saxophone, trumpet, and trombone.
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="185" src="https://www.youtube.com/embed/seP2NFCxHhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div> 
+    </section>
+    <hr class="outer">
+    <hr class="inner">
+    <hr class="outer"> 
+    <section class="country" id="mexico">
+        <header>
+            <h1>Mexico</h1>
+        </header>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Mariachi</h3>
+                </header>
+                <p class="info--text">
+                    Originating in the beautiful city of Guadalajara, Mariachi ensembles generally consist of several guitars, a “guitarrón” (a large  acoustic bass guitar), as many as eight violins, a “vihuelas” (a smaller five string guitar with a round back). Regional groups may also include a harp with 28 to 40 strings or a small snare drum.
+                    <br>
+                    <br>
+                    Famous tunes include “La Bamba”, “Cielito Lindo”, and “La Cucaracha.” 
+                </p>
+            </div>
+            <div class="video">
+                <iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/mDZG-BM3AoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe loading="lazy" width="272" height="185" src="https://www.youtube.com/embed/NCvJwzDQTBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div> 
+        <div class="video--group">
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Jazz</h3>
+                </header>
+            </div>
+            <div class="video"><iframe loading="lazy" width="214" height="214" src="https://www.youtube.com/embed/ko66gMMsnnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div> 
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Pop</h3>
+                </header>
+            </div>
+            <div class="video"><iframe loading="lazy" width="214" height="214" src="https://www.youtube.com/embed/yG7MPEQm1-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div> 
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Alternative</h3>
+                </header>
+            </div>
+            <div class="video"><iframe loading="lazy" width="214" height="214" src="https://www.youtube.com/embed/98Akpf1ph2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+    </div> 
+    </section>
+    <hr class="outer">
+    <hr class="inner">
+    <hr class="outer"> 
+    <section class="country" id="ecuador">
+        <header>
+            <h1>Ecuador</h1>
+        </header>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Pasillo</h3>
+                </header>
+                <p class="info--text">
+                    While Pasillo originated in Columbia, it is considered a national symbol in Ecuador. With a slower melodic tempo, the poetic lyrics are accompanied by guitars such as the requinto, violins, accordions, and piano. 
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="272" height="153" src="https://www.youtube.com/embed/2X9jPLuAIdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div> 
+    </section>
+    <hr class="outer">
+    <hr class="inner">
+    <hr class="outer"> 
+    <section class="country" id="peru">
+        <header>
+            <h1>Peru</h1>
+        </header>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Susana Baca</h3>
+                </header>
+                <p class="info--text">
+                    Susana Baca is an ethnomusicologist devoted to the afro-Peruvian music revival. She is a two-time Latin Grammy recipient. 
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="330" height="185" src="https://www.youtube.com/embed/ixJjpdti9jY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div> 
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Manuelcha</h3>
+                </header>
+                <p class="info--text">
+                    Manuelcha is known as "The Saqra of the Guitar." 
+                </p>
+            </div>
+            <div class="video"><iframe loading="lazy" width="330" height="185" src="https://www.youtube.com/embed/mV7gP2CAjFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div> 
+    </section>
+    <hr class="outer">
+    <hr class="inner">
+    <hr class="outer"> 
+    <section class="country" id="puerto-rico">
+        <header>
+            <h1>Puerto Rico</h1>
+        </header>
+        <div class="video--group">
+            <div class="info">
+                <div class="video--info">
+                    <header>
+                        <h3>Plena</h3>
+                    </header>
+                </div>
+                <div class="video"><iframe loading="lazy" width="214" height="214" src="https://www.youtube.com/embed/6VIhp8gBIVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div> 
+            <div class="info">
+                <div class="video--info">
+                    <header>
+                        <h3>Pop</h3>
+                    </header>
+                </div>
+                <div class="video"><iframe loading="lazy" width="214" height="214" src="https://www.youtube.com/embed/-xyW7QNc1mU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div> 
+            <div class="info">
+                <div class="video--info">
+                    <header>
+                        <h3>Reggaetón</h3>
+                    </header>
+                </div>
+                <div class="video"><iframe loading="lazy" width="214" height="214" src="https://www.youtube.com/embed/dSSLluy_OBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+        </div> 
+    </section>
+    <hr class="outer">
+    <hr class="inner">
+    <hr class="outer">  
+    <section class="country" id="uruguay">
+        <header>
+            <h1>Uruguay</h1>
+        </header>
+        <div class="video--group">
+            <div class="info">
+                <div class="video--info">
+                    <header>
+                        <h3>Candombe</h3>
+                    </header>
+                </div>
+                <div class="video"><iframe loading="lazy" width="156" height="156" src="https://www.youtube.com/embed/vp3EoobhrqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+            </div> 
+            <div class="info">
+                <div class="video--info">
+                    <header>
+                        <h3>Tango</h3>
+                    </header>
+                </div>
+                <div class="video"><iframe loading="lazy" width="156" height="156" src="https://www.youtube.com/embed/oBy4uAWmzpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div> 
+            <div class="info">
+                <div class="video--info">
+                    <header>
+                        <h3>Nueva Canción </h3>
+                    </header>
+                </div>
+                <div class="video"><iframe loading="lazy" width="156" height="156" src="https://www.youtube.com/embed/4bgyqoHcM7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div> 
+            <div class="info">
+                <div class="video--info">
+                    <header>
+                        <h3>Movie Soundtrack</h3>
+                    </header>
+                </div>
+                <div class="video"><iframe loading="lazy" width="156" height="156" src="https://www.youtube.com/embed/cg1wDc9JVB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div> 
+        </div>
+    </section>
+    <hr class="outer">
+    <hr class="inner">
+    <hr class="outer">  
+    <section class="country" id="usa">
+        <header>
+            <h1>Artists in the US</h1>
+        </header>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Desi Arnaz</h3>
+                </header>
+                <p class="info--text">
+                    Desi Arnaz was born in Cuba in 1917.  Besides being Lucille Ball's husband and costar in "I Love Lucy" Mr. Arnaz was also a professional musician.  He travelled to Miami and to New York to play in the Xaviar Cugat band.  He returned to Miami and created his own band where he developed the Conga Line.  He became very famous as a movie and television star.  
+                </p>
+            </div>
+            <div class="video">
+                <iframe loading="lazy" width="330" height="224" src="https://www.youtube.com/embed/sQZ6vOQYdcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe loading="lazy" width="330" height="224" src="https://www.youtube.com/embed/fBPvM7fOsks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Tito Puente</h3>
+                </header>
+                <p class="info--text">
+                    Tito Puente was born in New York City in Spanish Harlem in 1923.  He was the "King of Latin Jazz" combining Big Band and traditional Latin Music, forming the Tito Puente Orchestra
+                </p>
+            </div>
+            <div class="video">
+                <iframe loading="lazy" width="330" height="224" src="https://www.youtube.com/embed/alEd0ppK76Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe loading="lazy" width="330" height="224" src="https://www.youtube.com/embed/RPvMEZoZoZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Antonio Carlos Jobim</h3>
+                </header>
+                <p class="info--text">
+                    Antonio Carlos Jobim was born in Rio Di Janeiro in 1927.  He changed the Samba rhythms in to relaxing music known as Bossa Nova.  Jobim wrote Black Orpheus for the movie "Black Orpheus",  The Girl from Ipanema, Desafanido, One Note Samba and Dindi.  He collaborated with accomplished  musicians like Frank Sinatra, Stan Getz and Charlie Byrd.  
+                </p>
+            </div>
+            <div class="video">
+                <iframe loading="lazy" width="330" height="224" src="https://www.youtube.com/embed/Wi_r8V8DrnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe loading="lazy" width="330" height="224" src="https://www.youtube.com/embed/hD7kaMkvo0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div> 
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Selena</h3>
+                </header>
+                <p class="info--text">
+                    Selena Quintanilla was born in Texas, in 1971.  Selena was considered the "Queen of Tejano," a type of Mexican music that incorporated other styles, such as country and western. She was also sometimes referred to as the "Mexican Madonna" for her outfits and dance moves.
+                </p>
+            </div>
+            <div class="video">
+                <iframe loading="lazy" width="330" height="185" src="https://www.youtube.com/embed/RKGbjJarMeA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe loading="lazy" width="330" height="185" src="https://www.youtube.com/embed/Bqi7DSA1Vd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div> 
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Carlos Santana</h3>
+                </header>
+                <p class="info--text">
+                    Carlos Santana was born in Mexico in 1947.  He moved to San Francisco in the 1960's and started a band. With their highly original blend of Latin-infused rock, jazz, blues, salsa and African rhythms, the band—which quickly became known simply as Santana—gained an immediate following on the San Francisco club scene.
+                </p>
+            </div>
+            <div class="video">
+                <iframe loading="lazy" width="330" height="224" src="https://www.youtube.com/embed/95kCv10duFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe loading="lazy" width="330" height="224" src="https://www.youtube.com/embed/9Y46Y1aXQQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div> 
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Ricky Martin</h3>
+                </header>
+                <p class="info--text">
+                    Ricky Martin was born in Puerto Rico in 1971.  As a teenager, he was in the Pop group Menudo and went on to become a solo act.
+                </p>
+            </div>
+            <div class="video">
+                <iframe loading="lazy" width="330" height="224" src="https://www.youtube.com/embed/p47fEXGabaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe loading="lazy" width="330" height="224" src="https://www.youtube.com/embed/vCEvCXuglqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div> 
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Julio Iglesias</h3>
+                </header>
+                <p class="info--text">
+                    Julio Iglesias was born in 1943 in Madrid, Spain.  He was a soccer player, lawyer and turned into a singing pop star in the 1970's and 1980's.
+                </p>
+            </div>
+            <div class="video">
+                <iframe loading="lazy"la width="330" height="224" src="https://www.youtube.com/embed/rVq0ONrSH-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe loading="lazy" width="330" height="224" src="https://www.youtube.com/embed/5mfEJa7ydCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+            </div>
+        </div> 
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Gloria Estefan</h3>
+                </header>
+                <p class="info--text">
+                    Gloria Estefan was born in Cuba in 1957.  Her band, Miami Sound Machine, was a pop favorite in the 1980's and 1990's.
+                </p>
+            </div>
+            <div class="video">
+                <iframe loading="lazy" width="330" height="224"src="https://www.youtube.com/embed/ARqAf1U68oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe loading="lazy" width="330" height="224" src="https://www.youtube.com/embed/eeKxQ9LQAB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div> 
+        <div class="info">
+            <div class="video--info">
+                <header>
+                    <h3>Jennifer Lopez</h3>
+                </header>
+                <p class="info--text">
+                    Jennifer Lopez was born in the Bronx.  She shines across the board: film, television, music, and dance.  You name it! She has lived a very busy life and continues to do so!!!
+                </p>
+            </div>
+            <div class="video">
+                <iframe loading="lazy" width="330" height="224" src="https://www.youtube.com/embed/6XbIuSLaCnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe loading="lazy" width="330" height="224" src="https://www.youtube.com/embed/Q91hydQRGyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>  
+    </section>
+    <script>
+        // Styling Buttons
+        function plus() {
+            txt = document.body;
+            style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+            currentSize = parseFloat(style);
+            txt.style.fontSize = (currentSize + 5) + 'px';
+        }
+        function minus() {
+            txt = document.body;
+            style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+            currentSize = parseFloat(style);
+            if (currentSize > 15) {
+                txt.style.fontSize = (currentSize - 5) + 'px';
+            }
+        }
+        function mode() {
+            document.body.classList.toggle("dark");
+        }
+
+        // SCROLLER
+        function scroller(scroll_pos) {
+            document.getElementById(scroll_pos).scrollIntoView();
+        }
+
+        // COUNTER
+        const countEl = document.getElementById('counter');
+        updateVisitCount();
+        function updateVisitCount() {
+            fetch('https://api.countapi.xyz/hit/sdmusicappreciation/test')
+            // https://api.countapi.xyz/hit/sdmusicappreciation/electronic
+            .then(res => res.json())
+            .then(res => {
+                countEl.innerHTML = res.value;
+            })
+        }
+
+        // MOBILE MENU
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        function mobile_btn_func() {
+        document.getElementById("btn_group_mobile_id").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+        if (!event.target.matches('.menu_button_mobile')) {
+            var dropdowns = document.getElementsByClassName("btn_group_mobile");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+        }
+    </script>
+</body>
+</html>
