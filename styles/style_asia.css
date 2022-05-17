@@ -74,7 +74,7 @@ a:hover::after {
   .header--top {
     text-align: center;
     height: 100vh;
-    background: url(img/banner_asia.jpg) ;
+    background: url("../img/banner_asia.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -338,9 +338,25 @@ a:hover::after {
   color: var(--blue);
 }
 
-@media (max-width: 1400px) {
+@media(min-width: 1500px) {
   .nav-open .nav {
-    transform: translateX(50%);
+    transform: translateX(60%);
     
+  }
+ 
+}
+
+
+@media(min-width: 1650px) {
+
+  /* .nav-open .nav {
+    transform: translateX(80%);
+  } */
+  .nav__item a {
+    font-size: smaller;
+  }
+
+  .style_btn {
+    top: 30px;
   }
 }
