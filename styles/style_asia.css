@@ -57,7 +57,7 @@ a:hover::after {
 }
   
   .site-wrap {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 20px auto;
     background-color: var(--dark-gray);
     padding: 40px 0;
