@@ -125,7 +125,7 @@ a:hover::after {
     position: absolute;
     display: none;
     background-color: black;
-    overflow: scroll;
+    overflow-y: scroll;
   }
 
   .nav__list--show {
