@@ -106,7 +106,7 @@ li {
 .header--top {
     text-align: center;
     height: 100vh;
-    background: url(img/banner__broadway.jpg) ;
+    background: url("../img/banner__broadway.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
