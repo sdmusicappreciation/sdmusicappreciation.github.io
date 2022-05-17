@@ -352,9 +352,9 @@ a:hover::after {
 
 @media(min-width: 1650px) {
 
-  .nav-open .nav {
+/*   .nav-open .nav {
     transform: translateX(80%);
-  }
+  } */
 
 
   .style_btn {
