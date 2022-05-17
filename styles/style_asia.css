@@ -339,9 +339,9 @@ a:hover::after {
   color: var(--blue);
 }
 
-@media(min-width: 1500px) {
+@media(min-width: 1300px) {
   .nav-open .nav {
-    transform: translateX(60%);
+    transform: translateX(80%);
     
   }
    .nav__item a {
