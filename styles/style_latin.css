@@ -49,7 +49,7 @@ padding-right: 5px;
 
 .banner {
 	margin-bottom: 2em;
-    background-image: url("img/banner_latin.jpeg");
+    background-image: url("../img/banner_latin.jpeg");
     background-color: black;
     height: 50vh;
     background-repeat: no-repeat;
