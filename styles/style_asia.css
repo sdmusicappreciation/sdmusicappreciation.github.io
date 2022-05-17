@@ -99,8 +99,12 @@ a:hover::after {
   p,
   span {
       max-width: 70ch;
-      padding-inline: 1rem;
+     
   }
+
+p {
+	 padding-inline: 2rem;
+}
 
 
 /* nav */
