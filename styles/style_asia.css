@@ -343,18 +343,19 @@ a:hover::after {
     transform: translateX(60%);
     
   }
+   .nav__item a {
+    font-size: smaller;
+  }
  
 }
 
 
 @media(min-width: 1650px) {
 
-  /* .nav-open .nav {
+  .nav-open .nav {
     transform: translateX(80%);
-  } */
-  .nav__item a {
-    font-size: smaller;
   }
+
 
   .style_btn {
     top: 30px;
