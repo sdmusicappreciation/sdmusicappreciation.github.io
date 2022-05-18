@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Diego Music Legends</title>
+
+    <link rel="stylesheet" href="styles/style_san-diego.css">
+    <script src="scripts/script_san-diego.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="style_btn">
+        <button class="float_home"><a id="home" href="https://sdmusicappreciation.github.io/" target="#">🏠</a></button>
+        <button class="float_plus" onclick="plus()">➕</button>
+        <button class="float_minus" onclick="minus()">➖</button>
+        <button class="float_mode" onclick="mode()">🌞<br>🌙</button>
+    </div>
+    <header class="header--top">
+        <h1 class="header--title">San Diego Music Legends</h1>
+    </header>
+    <nav class="nav" id="main">
+        <button class="nav__toggle">
+            <span class="hamburger"></span>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#rock" class="nav__link">Rock</a></li>
+            <li class="nav__item"><a href="#metal" class="nav__link">Metal</a></li>
+            <li class="nav__item"><a href="#pop" class="nav__link">Pop</a></li>
+            <li class="nav__item"><a href="#jazz" class="nav__link">Jazz</a></li>
+            <li class="nav__item"><a href="#classical" class="nav__link">Classical</a></li>
+            <li class="nav__item"><a href="#blues" class="nav__link">Blues</a></li>
+            <li class="nav__item"><a href="#r-b" class="nav__link">R&B</a></li>
+            <li class="nav__item"><a href="#folk" class="nav__link">Folk</a></li>
+            <li class="nav__item"><a href="#zydeco" class="nav__link">Zydeco</a></li>
+            <li class="nav__item"><a href="#celtic" class="nav__link">Celtic</a></li>
+            <li class="nav__item"><a href="#gypsy-jazz" class="nav__link">Gypsy-Jazz</a></li>
+          </ul>
+    </nav>
+    <ul class="site-wrap">
+        <li class="genre playlist" id="playlist">
+            <header class="header">
+                <h2>Playlist</h2>
+            </header>
+            <div class="video">
+                <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLN-E2sR97cam6fZNyj6yiPSusaD0b1Orz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </li>
+        <li class="genre" id="rock">
+            <header class="header--genre">
+                <h1>Rock</h1>
+            </header>
+            <ul class="genre--list">
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/UIVe-rZBcm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Iron Butterfly</h2>
+                        </header>
+                        <div class="info--text">
+                            <span>"In-A-Gadda-Da-Vida"</span>
+                            <span>1968</span>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <ul class="video--list">
+                        <li class="video">
+                            <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/Ialhaxhr7iA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li class="video">
+                            <iframe loading="lazy" width="464" height="261" src="https://www.npr.org/player/embed/483384684/483426597" frameborder=0></iframe>
+                        </li>
+                    </ul>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Frank Zappa</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Frank Zappa moved to SD from Baltimore at the age of 13. He attended Grossmont and Mission Bay Highschool.</p>
+                            <p>Zappa joined his first band, The Ramblers,  freshman year of high school. He began his musical journey as a drummer, and not a particularly good one.  Zappa used pots and pans for drums at rehearsals, since he didn’t actually acquire a drum kit until the w eek before the gig. He played his first show at the Uptown Hall at40th & Meade, after which the band split the seven dollar take between them. Having been chastised for being too splashy with his cymbals, being a little shaky with the rhythm, and managing to forget to bring drum sticks to his first gig, it wasn’t long before the Ramblers replaced him.</p>
+                            <p>
+                                Unfortunately, Zappa never graduated from Mission Bay. This was due to a fondness for explosives, which he demonstrated by setting off a mixture of rocket fuel and stink powder during a Parent Open House. The Zappa family proceeded to relocate to Lancaster after his expulsion. 
+                            </p>
+                            <div class="quote">
+                                <span>
+                                    "Without deviation from the norm, progress is not possible." 
+                                </span>
+                                <span>
+                                    "Jazz isn't dead. It just smells funny."
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <ul class="video--list">
+                        <li class="video">
+                            <iframe loading="lazy" width="261" height="261" src="https://www.youtube.com/embed/BzaNsWY-9MA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video--info">
+                                <span class="title">"Peaceful Easy Feeling"</span>
+                                <span class="date">1972</span>
+                            </div>
+                        </li>
+                        <li>
+                            <iframe loading="lazy" width="261" height="261" src="https://www.youtube.com/embed/LichFSsHs8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video--info">
+                                <span class="title">"Part of Me, Part of You"</span>
+                                <span class="date">1992</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Jack Tempchin</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Jack Tempchin moved from Ohio to SD at 9 months; lived at Banker's Hill (formerly Florence Heights) during the 1970s; Encinitas during the 1980s</p>
+                            <p>Collaborations:  George Jones, Buck Owens, Emmylou Harris, Glen Campbell, Jackson Browne, Dwight Yoakam, Linda Ronstadt, Patty Loveless, Trisha Yearwood, Tanya Tucker, Richie Havens, Sammy Kershaw, Kate Wolf, Tom Rush and more.</p>
+                            <p>The city of San Diego declared December 1st 2012 to be "Peaceful Easy Feeling Day" to honor Jack and the 40th anniversary of the song.</p>
+                            <div class="quote">
+                                <p>“It’s impossible to overrate the importance of songs. Songs change people. Songs enlighten and delight. Songs bring lives together. Songs can nourish and build communities in a billion ways. I’m so proud that I’ve made songwriting my life’s work.”</p>
+                            </div>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="315" src="https://www.youtube.com/embed/xrZJEULnt6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="title">"Riverside"</span>
+                            <span class="date">1986</span>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2><a href="https://www.sandiegouniontribune.com/entertainment/music/story/2021-03-27/the-beat-farmers-who-rose-from-spring-valley-to-rock-the-world-celebrated-on-bands-new-old-double-album">The Beat Farmers</a></h2>
+                        </header>
+                        <div class="info--text">
+                            <span>Genres: rockabilly, blues, boogie woogie, roots rock, cowpunk, country rock</span>
+                            <span>Origin: Spring Valley</span>
+                            <p>The Beat Farmers were a cult band from the 1980's to the early 1990's. They gained enormous popularity, toured in Europe and across the US, as well as released several albums before the untimely death of drummer Country Dick Montana mid concert.</p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/ht672-wYelc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Stone Temple Pilots</h2>
+                        </header>
+                        <div class="info--text">
+                            <span class="title">"Vasoline"</span>
+                            <span class="date">1994</span>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/Rr9yfxCZCqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Rocket From the Crypt</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Rocket from the Crypt started in 1990 in San Diego.  They are a pop-rock band.</p>
+                            <span class="title">"On A Rope"</span>
+                            <span>1995</span>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/sc4D5fntg4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span>"San Diego"</span>
+                            <span>2016</span>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Blink-182</h2>
+                        </header>
+                        <div class="info--text">
+                            <span>Origin: Poway</span>
+                            <p>Guitarist Tom DeLonge and drummer Scott Raynor met while in high school, both attending a Battle of the Bands competition. At the time, DeLonge attended Rancho Bernardo High School. He started there after expulsion from Poway High. Local Poway lore states that the name Blink-182 (officially pronounced "Blink Eighteen-Two") originates from a rivalry between the two schools.</p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/jE-Krlqi4fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Switchfoot</h2>
+                        </header>
+                        <div class="info--text">
+                            <span class="title">"Dare You To Move"</span>
+                            <span class="date">2003</span>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/oM3ykGr6Nj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="title">"Everything's Magic"</span>
+                            <span class="date">2007</span>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Angels & Airwaves</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Angels and Airwaves was formed in San Diego in 2005 when Tom DeLonge left Bling 182.  They are in the same genre as U2 and Pink Floyd.</p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="257" src="https://www.youtube.com/embed/JRAXD2YPGyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Josh Vasquez</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>
+                                Josh Vasquez is a modern San Diego Music Legend.  He graduated from San Diego Creative and Performing Arts in 2013 . Before he graduated, he was in the Guitar Center King of the Blues Contest where he outdid himself!!  He and his high school ensemble were named "Winner of the Best Teen Band in the USA  (NAMM)"  He continued his musical endeavors at Berklee  College of Music where he graduated in 2017 with a Professional Music Degree.  Since then he has been teaching, playing in plays in theaters around San Diego and performing with many bands (including the Marcia Forman Band) .  Starting In 2019 he traveled around the country and Canada with the "Simon and Garfunkel Story"  playing guitar and doing background vocals.  He is scheduled to continue the performances in September 2021.   
+                            </p>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </li>
+        <li class="genre" id="metal">
+            <header class="header--genre">
+                <h1>Metal</h1>
+            </header>
+            <ul class="genre--list">
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/ce2KN06dS7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>P.O.D.</h2>
+                        </header>
+                        <div class="info--text">
+                            <span class="title">Alive</span>
+                            <span class="date">"As I Lay Dying"</span>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </li>
+        <li class="genre" id="pop-extended">
+            <header class="header--genre">
+                <h1>Pop, Rock, Blues, Country</h1>
+            </header>
+            <ul class="genre--list">
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/nQuHTW7viVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="title">"Better Day"</span>
+                            <span class="date">2021</span>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>A.J. Croce</h2>
+                        </header>
+                        <div class="info--text">
+                            <div class="quote">
+                                "I was into every kind of music... you might say I was unfocused, but I consider an eclectic taste in music to be the foundation of versatility."
+                            </div>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </li>
+        <li class="genre" id="pop">
+            <header class="header--genre">
+                <h1>Pop</h1>
+            </header>
+            <ul class="genre--list">
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/qJFVPxBpezk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="title">"Young Girl"</span>
+                            <span>1987</span>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Gary Puckett & The Union Gap</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Gary Puckett was born in Minnesota on October 17,1942. He grew up in a town near Union Gap, Washington  and went to college at San Diego State University in 1960.  Gary Puckett and the Union Gap was created in 1967 with friends he met in San Diego.  They wore Civil War costumes for their gigs.  The band lasted from  1967-1971.  Some of their famous songs were:  "Young Girl" and "Woman, Woman".  After the band disbanded, Gary Puckett tried acting and continued playing music.</p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <ul class="video--list">
+                        <li class="video">
+                            <iframe loading="lazy" width="261" height="261" src="https://www.youtube.com/embed/QrPiyORcBko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li class="video">
+                            <iframe loading="lazy" width="261" height="261" src="https://www.youtube.com/embed/MZ6Ptsv-wUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li class="video">
+                            <iframe loading="lazy" width="261" height="261" src="https://www.youtube.com/embed/jc_Pf1rRijg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                    </ul>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Steve Poltz</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>The story behind "You Were Meant For Me" according to Steve Poltz: </p>
+                        </div>
+                    </section>
+                    
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/4WW4qcmrJ3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="title">"You Were Meant For Me"</span>
+                            <span>1995</span>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Jewel</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Jewel Kilcher was born on May 23, 1974, in Payson, Utah, and grew up in Alaska. She moved to San Diego after graduation to live with her mother and focus on her music career playing in coffee houses.  She was discovered by a music manager at the Innerchange in Pacific Beach.  She signed a record deal in 1994.  She has been singing, acting and is an important activist regarding homelessness.</p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/EkHTsc9PU2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="title">"I'm Yours"</span>
+                            <span class="date">2008</span>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Jason Mraz</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Jason Mraz was born in 1977 in  Mechanicsville, VA.  He graduated high school in Virginia and went to the American Musical and Dramatic Academy, New York where he studied for a few months. San Diego was his next destination, in 1999, to pursue a career in Music where he performed with the rock group Elgin Park at Java Joe's Coffee house.  He signed with Elektra records in 2002 and he won two Grammy's in 2010.</p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/BfRpWHkhFSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="title">"Say Anything"</span>
+                            <span class="date">2012</span>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Tristan Prettyman</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Tristan Prettyman (born May 23, 1982) is a singer-songwriter and former Roxy model. She was born and raised in Del Mar. She was discovered at 15 by The Moonshine Conspiracy who asked that she play in their company film Shelter.</p>
+                            <p>She has released seven albums and toured with several artists including Jason Mraz.</p>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </li>
+        <li class="genre" id="jazz">
+            <header class="header--genre">
+                <h1>Jazz</h1>
+            </header>
+            <ul class="genre--list">
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/YnHM3VxpJTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="title">"Body & Soul"</div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2><a href="https://charlesmcpherson.com/bio/">Charles McPherson</a></h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Charles McPherson was born in Joplin, MO, McPherson moved to SD in 1978. He is an amazing Musicologist, teacher, and San Diego treasure.  He is involved in KSDS - 88.3 Jazz Radio station, San Diego Symphony and San Diego Ballet and wherever music is created you can always find him nearby.  He is an international star.  He travels to Europe, New York City, and around the world to share his musical creativity.</p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <ul class="video--list">
+                        <li class="video"><iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/Lp32ZlFsIcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                        <li class="video"><iframe loading="lazy" width="464" height="315" src="https://www.youtube.com/embed/3dZO4kpth7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                    </ul>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Joe Marillo</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Marillo is one reason why SD has such a thriving Jazz scene. He pushed for more jazz performances around town, and he sat in on most of them. He was a regular at all the venues:  The Crossroads, Elario’s, Our Place, Bella Via in Cardiff, Henry’s in Oceanside, George’s in Encinitas, the Jazz Mine, the Catamaran. You can thank Joe for the great lineup at the Catamaran during the 70s.  People like Stan Getz, Dizzy Gillespie, Sonny Stitt, Ahmad Jamal, Supersax, Bobby Hutcherson, and Bill Evans. He also founded the non-profit Society for the Preservation of Jazz.</p>
+                            <div class="quote">
+                                “So as long as I have a place to play, a place to practice my music, I’m content–even if it’s only one night a week. And aside from playing live, I’m constantly seeking out new avenues to share my creativity–and my love of be-bop–with others.”
+                            </div>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/Xfc4VeGNoec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="title">"Everything's Gonna Be Alright"</span>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Hollis Gentry</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Born and raised in SD, Gentry attended Crawford high school in El Cerrito. He picked up drums in elementary, but had settled on sax by middle school. At fifteen, he founded the funk band Power with fellow student Nathan East and In 1972 they opened for Cannonball Adderly.  He went on to work with Joe Sample, Stanley Clarke, Larry Carlton, Nancy Wilson, Barry White, Freddie Hubbard, Al Jarreau, Thelma Houston, Randy Crawford, Alphonse Mouzon, Gaea Schell, Rob Mullins, David Benoit and more. (He was one of my teachers!!)</p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/RpR5nIbydiU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="title">"Sir Duke"</span>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2><a href="https://nathaneast.com/">Nathan East</a></h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Nathan East  was born in Philadelphia, PA in 1955.  He attended Crawford High and later went on to UCSD for music.  He has collaborated with Quincy Jones, Eric Clapton, Stevie Wonder, Anita Baker, Barbra Streisand, Sting, Toto, B.B. King and so many other influential musicians of the 20th Century.  He is still one of the most sought after bass players in the world.</p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/AylGTUcovMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="title">"C.C. Rider"</span>
+                            <span class="artist">Sue Palmer & Liz Ajuzie</span>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Sue Palmer</h2>
+                        </header>
+                        <div class="info--text">
+                            <span>March 25, 2008, was proclaimed by the San Diego City Council as Sue Palmer Day.</span>
+                            <div class="quote">
+                                "Her legs bowed intently, the laughter dancing above her fingertips, like a pool shark she is right on the money. Madame Palmer sets free the walking bass and the eight to the bar so inherent in this style of music. This musician possesses all the secrets of Boogie Woogie."
+                            </div>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/of6KlEs9U1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="title">"Shining Star"</span>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2><a href="http://www.euphoriabrassband.com/bio">Euphoria Brass Band</a></h2>
+                        </header>
+                        <div class="info--text">
+                            <p>The Euphoria Brass Band has been around San Diego  since 2011. They play contemporary old and new  New Orleans style get up and dance music.  The band consists  of percussion , a tuba,  baritone, tenor, alto and clarinet, trumpet and trombone.  They have won many San Diego Music Awards throughout the years.  Their music arrangements are tight and amazing.  All of the musicians are teachers in their own right: The horn section is:  April West (trombone), JP Balmat (Alto and Baritone saxes, clarinet)  David Jackson  (tenor sax) and Wayne Rice (sousaphone). They play a mix of old school New Orleans traditional brass band jazz, funky street beats, and new school edginess with a West Coast feeling.</p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <ul class="video--list">
+                        <li class="video">
+                            <iframe loading="lazy" width="640" height="360" src="https://namm.org/video/embed/1039" frameborder="0" scrolling="auto"></iframe>
+                        </li>
+                        <li class="video"><iframe loading="lazy" width="464" height="333" src="https://www.youtube.com/embed/quu7s9F11LE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                    </ul>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Jim Plank</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Born to a family of musicians, Plank attended San Diego High and went on to San Diego State. While other greats flocked to LA or NYC, Plank stayed in SD. This was where his family was from (dating back to 1860) and, regardless, the greats came to him. As a drummer, he was one of the best. Classical, Jazz, Broadway - he was your go-to man.</p>
+                            <span>Bob Magnusson, who was nurtured by Plank when just starting out, observed,</span>
+                            <div class="quote">
+                                <p>“As my career grew, I was able to work with many of the great jazz drummers [Buddy Rich, Jimmy Cobb, Tootie Heath, Shelly Manne, Joey Baron, Roy McCurdy, to name a few]. In comparison, Jim is one of the greatest musicians I’ve had the opportunity to play with. Notice I said ‘musician,’ not just drummer. He has amazing ears. As a drummer, percussionist, pianist, and vibraphonist, his knowledge of the history of both jazz and classical music allows him to play authentically and musically in whatever style of music he’s performing.”</p>
+                            </div>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/wvi8cNytUrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Daniel Jackson</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Daniel Jackson was a saxophonist, pianist, composer, and music teacher. Inspired to play sax at a young age (by Harold Land who played in a band with his  elder brother, Fred,  and who later played with the Clifford Brown Quartet), Jackson's mother paid for his lessons on a maid's wage. When she could no longer afford those, Jackson made a deal with his teacher, agreeing to mow his lawn in exchange for lessons.</p>
+                            <p>After graduating, Jackson joined the navy, where he met and played with among others Wes Montgomery.</p>
+                            <div class="quote">
+                                <p>"I had a lot of fun playing with Wes [Montgomery] when I was in the Air Force. I think he was a postman somewhere. I was just sittin’ in. I would write music for him because he couldn’t read or write [music]. He’d come up with some tune and he’d say, ‘Hey, man, can you write some notes down for me?’ And I’d do that.” </p>
+                            </div>
+                            <span>After the war, he toured Europe with the Ray Charles Band.</span>
+                            <div class="quote">
+                                <p>“He (Charles) gave us a concert once,” says Jackson. “It was terrifying. The saxophone was so hot, steam heat was rising from it, and melting into these golden globes of tone.”</p>
+                            </div>
+                            <p>Jackson returned to SD and went on to play with and teach those that would later become the greats: bassists Bob Magnusson and Mark Dresser, trumpeter Gilbert Castellanos, pianist Mike Wofford, sax symbol Charles McPherson, flutist Holly Hofmann, and pianist-singer A.J. Croce.</p>
+                            <p>In January 2010, San Diego City Councilwoman Donna Frye officially declared the week of January 24 to be Daniel Jackson Week. At the time Jackson was on Sabbatical, and Frye, a long time fan, wanted to make sure that his music was always celebrated.</p>
+                            <span>Daniel Jackson passed away in 2014.</span>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/-BLAnXElBjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Dave Greeno</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>I have to mention Dave Greeno, because he was a big influence on me.  He was my instructor in the San Diego City College Jazz Band in 1980-1982.  He played trumpet in the San Diego Symphony for decades.  He was an inspiration to so many musicians throughout San Diego and the world.</p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/uRSnBn5Elns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Bob Magnusson</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Magnusson has performed and recorded with many pop and jazz greats, such as Peter Sprague, Jim Plank, Buddy Rich, Sarah Vaughan, Jimmy Cobb, the Art Pepper Quartet, Joe Pass, Linda Ronstadt, Neil Diamond, Bonnie Raitt, and even Madonna. Venues he’s appeared in include Lincoln Center, the Kennedy Center for the Performing Arts, and Carnegie Hall.</p>
+                            <p>In 1998, Magnusson joined the faculty at San Diego Mesa Community College and the Coronado School of the Arts, where he teaches high school and college students about harmony and theory, jazz improvisation, etc.</p>
+                            <span>According to Leonard Feather of the Los Angeles Times,</span>
+                            <div class="quote">
+                                <p>“His solos are models of creative, spontaneous artistry. His tone is full, rich, and consistent; he is one of those masters who can achieve effortlessly any phrase that comes to his mind. His basic function as a rhythm player is fulfilled no less resourcefully when the others solo.”</p>
+                            </div>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="315" src="https://www.youtube.com/embed/ArwCPRnKuR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="title">"In My Life"</span>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Peter Sprague</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Peter Sprague was born in 1955 in Cleveland, Ohio, moved to Colorado and in 1963 the family moved to Del Mar, CA.   He went to the Interlochen Arts Academy, studied with Pat Matheny in Boston, and went on tour with great musicians like Chick Corea, Hubert Laws, Dianne Reeves,  Sergio Mendes and others.  From 1990 to 1993 Peter taught music at both California Institute of the Arts in Los Angeles and the Musicians Institute in Hollywood. He continues to teach every summer at the annual UCSD Jazz Camp in La Jolla, CA. In 1994, Sprague opened SpragueLand recording studio in Encinitas. He describes it as the "West coast cousin" to Jimi Hendrix's Electric LadyLand in NYC.</p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/Ii6F842ehOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Gilbert Castellanos</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Gilbert Castellanos is a trumpet virtuoso.  He started the San Diego Young Lions Conservatory, he is the jazz coordinator for the San Diego Symphony, he plays with the Clayton Hamilton Big Band and has a jam sessions at the Panama 66 venue in Balboa Park on Wednesday nights.</p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="315" src="https://www.youtube.com/embed/hOks6b1pu20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="title">"Galazy Lakes"</span>
+                            <span class="date">2011</span>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Miss Erica Davies</h2>
+                        </header>
+                        <div class="info--text">
+                            <p></p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="315" src="https://www.youtube.com/embed/_OdSjGHCPDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Marcia Forman Band</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Yes, I have my own band.  I moved to San Diego in 1980.  Since 2008, my band has played every Sunday morning at the Big Kitchen (my sister's restaurant). Hopefully, after the epidemic, we will continue to serenade the neighborhood.  The band has had many members throughout the years.  Right now it consists of Me on Alto sax, Floyd Fronius (my husband) on violin, Armand Frigon on guitar, Gedeon Deak on bass and Ray Conseur on drums.  We make beautiful music together!!!</p>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </li>
+        <li class="genre" id="classical">
+            <header class="header--genre">
+                <h1>Classical</h1>
+            </header>
+            <ul class="genre--list">
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="315" src="https://www.youtube.com/embed/H9Wx3t2f5pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Bertram Turetzky</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Bertram Turetzky was born in Connecticut in 1933.  He got a masters degree in Music History from the University of Hartford.  His main instrument is the double bass. Turetzky is known for his classical, jazz, and klezmer compositions. He is a distinguished Emeritus Professor at the University of California at San Diego.</p>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </li>
+        <li class="genre" id="blues">
+            <header class="header--genre">
+                <h1>Blues</h1>
+            </header>
+            <ul class="genre--list">
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="315" src="https://www.youtube.com/embed/7TUsMqtFOEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Robin Henkel</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Robin Henkel is a San Diego Legend.  Robin plays blues, jazz, funk, country swing, Hawaiian and Latin.  Over the years, he opened shows for BB King, Bonnie Raitt, Dizzy Gillespie, Todd Rundgren, Arlo Guthrie, ... etc.  He teaches music and shares his wealth of information about music.  You can normally go see him play regularly at coffee houses and concerts throughout the region.</p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/rLtZKkCIVmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Tom Waits</h2>
+                        </header>
+                        <div class="info--text">
+                            <span class="title">"Downtown Train"</span>
+                            <span class="date">1985</span>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </li>
+        <li class="genre" id="r-b">
+            <header class="header--genre">
+                <h1>R&B</h1>
+            </header>
+            <ul class="genre--list">
+                <li class="band">
+                    <ul class="video--list">
+                        <li class="video">
+                            <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/zlOfgLL_qi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video--info">
+                                <span class="title">"Rise Up"</span>
+                            </div>
+                        </li>
+                        <li class="video">
+                            <iframe loading="lazy" width="464" height="315" src="https://www.youtube.com/embed/9n1Is2xHvdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video--info">
+                                <span class="title">Tigress & Tweed</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Andra Day</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Andra Day (born Cassandra Monique Batie) graduated from the San Diego School for Creative and Performing Arts in 200 3.  In 2010, Stevie Wonder's then wife, Kai Millard, noticed Day performing at a strip mall and brought her to the attention of her husband. Day received a call from Wonder himself soon after.</p>
+                            <span>NPR's Katie Presley describes her voice as having</span>
+                            <div class="quote">
+                                "Eartha Kitt's unflappable confidence, Amy Winehouse's effortless grasp of classic jazz, Billie Holiday's access to raw emotion, and Adele's range and pop sensibility." 
+                            </div>
+                            <p>She recently won a Golden Globe for Best Actress in a motion picture and was nominated for an Academy Award for Best Actress.</p>
+                        </div>
+                    </section>
+                </li>
+                <li class="band">
+                    <ul class="video--list">
+                        <li class="video">
+                            <iframe loading="lazy" width="464" height="261" src="https://www.youtube.com/embed/8ZFpA2nzLjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video--info">
+                                <span class="title">"I'm Done"</span>
+                                <span class="title">2012</span>
+                            </div>
+                        </li>
+                        <li class="video">
+                            <iframe loading="lazy" width="464" height="315" src="https://www.youtube.com/embed/UqDSxuxGx-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="video--info">
+                                <span class="title">"Change"</span>
+                                <span class="date">2020</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>B. Slade</h2>
+                        </header>
+                        <div class="info--text">
+                            <p></p>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </li>
+        <li class="genre" id="folk">
+            <header class="header--genre">
+                <h1>Folk</h1>
+            </header>
+            <ul class="genre--list">
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Lle0ASPnBDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video--info">
+                            <span class="title">"Right Now Not Tomorrow" (feat. Jason Mraz)</span>
+                            <span class="date">2021</span>
+                        </div>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2><a href="https://www.gregorypage.com/home">Gregory Page</a></h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Gregory Page was born in England in 1963 to an incredibly talented family.  He moved to North Park in San Diego when he was a youth.  He is a singer, songwriter, and producer.  He has created over 20 albums.  He has opened up for musicians like Bob Dylan, Judy Collins, Leon Russell and Jason Mraz (whom he discovered in San Diego.)  He spends his time  performing here in the states and in Europe.</p>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </li>
+        <li class="genre" id="zydeco">
+            <header class="header--genre">
+                <h1>Zydeco</h1>
+            </header>
+            <ul class="genre--list">
+                <li class="band">
+                    <div class="video"></div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2><a href="https://www.bayoubrothers.net/">The Bayou Brothers</a></h2>
+                        </header>
+                        <div class="info--text">
+                            <p>The Bayou Brothers play Zydeco music like they were born in Louisiana (I think Ric was!!).  They consist of John Chambers on accordian, Ric Lee on drums, Jack Stephens on lead guitar and vocals, Judy Seid and Jessica Lee on Rubboard.  They have been together since 1995.  (Ric and I were in San Diego City College Jazz Band together in 1980. Small World!)</p>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </li>
+        <li class="genre" id="celtic">
+            <header class="header--genre">
+                <h1>Celtic</h1>
+            </header>
+            <ul class="genre--list">
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="315" src="https://www.youtube.com/embed/KomnhJ5PHOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Raggle Taggle</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Mike and Jean Stewart started Raggle Taggle in the early 1980's.  They have performed at SeaWorld, The San Diego Zoo, San Diego Wild Animal Park, Del Mar Fair and many conventions.   Their music consists of Celtic, Renaissance, Brazilian, jazz and swing.  My husband Floyd has been a fixture in this band for decades.  They will definitely make you smile when you hear their music.   Jean is a librarian at the Coronado Library while Mike entertains children there many days during the week.  They are both a major inspiration to the community.</p>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </li>
+        <li class="genre" id="gypsy-jazz">
+            <header class="header--genre">
+                <h1>Gypsy Jazz</h1>
+            </header>
+            <ul class="genre--list">
+                <li class="band">
+                    <div class="video">
+                        <iframe loading="lazy" width="464" height="315" src="https://www.youtube.com/embed/BgLMGY-7g5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <section class="info">
+                        <header class="header--info">
+                            <h2>Trio Gadjo</h2>
+                        </header>
+                        <div class="info--text">
+                            <p>Trio Gadjo offers their spin on Django Reinhardt-inspired gypsy jazz with a bit of blues, swing, and classic jazz thrown in.</p>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
+
+
