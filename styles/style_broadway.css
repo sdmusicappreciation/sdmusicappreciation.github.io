@@ -80,8 +80,12 @@ li {
     max-width: 60ch;
 }
 
+p {
+	padding: 1rem;
+}
+
 .site-wrap {
-  max-width: 1300px;
+  max-width: 80vw;
   margin: 20px auto;
   background-color: var(--gray);
   padding: 40px 0;
@@ -213,6 +217,7 @@ li {
     position: absolute;
     display: none;
     background-color: var(--gray);
+	  overflow: scroll;
 
   }
 
@@ -275,7 +280,7 @@ li {
   
   
   .nav-open .nav {
-    transform: translateX(80%);
+    transform: translateX(60%);
     
   }
   
@@ -356,4 +361,17 @@ li {
 
 ol li {
     list-style-type:circle;
+}
+
+
+@media(min-width: 1300px) {
+  .nav-open .nav {
+    transform: translateX(80%);
+    
+  }
+
+  .nav__item a {
+    font-size: smaller;
+  }
+ 
 }
